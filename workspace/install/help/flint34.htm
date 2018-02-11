@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<TITLE> SET-CELLS  </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> SET-CELLS </H3> </CENTER>
+<P>
+
+ Having defined the geometry and grid, the only remaining task
+ relating to the geometrical specifications of a FLUENT CFD problem
+ will be to define the types of cells which make up the geometry.
+ <P>
+ This task is the same as FLUENT, SET-CELLS task but it is performed
+ entirely  via a Graphical Interface.
+  While the geometry and grid is been defined, Flint anticipates the
+ cell types by setting all the outer cells to be of type WALL
+ and all the interior cells to be of type LIVE.
+  So, when SET-CELLS is entered for the first time, the user will be
+  presented with this default configuration.
+
+ <P>
+ Two new icons, named TYPE and ZONE are introduced to assist with the task
+ of setting Cell-Types.
+ <P>
+ Different colours are associated with different CELL-TYPES and live(.)
+ cells are always displayed as empty ( Black) cells. <BR>
+ Currently, as well as LIVE cells the following cell types can also be
+ set;
+
+ <UL>
+ <LI> WALL,</LI>
+ <LI> INLET,</LI>
+ <LI> OUTLET,</LI>
+ <LI> SYMETRY,</LI>
+ <LI> CYCLIC,</LI>
+ </UL>
+
+ Some cell types such as WALL and INLET always have ZONE numbers associated with
+ them. When a cell or group of cells are made WALL or INLET cells,
+ they take on the currently defined ZONE number as shown by the ZONE icon.
+  The current ZONE number can be changed by simply clicking on the ZONE
+  icon. A click with the left-mouse-button increments the ZONE number
+  by one, whereas clicking the ZONE icon with the right-hand mouse button
+  decrements it by one. Zone numbers run from 1 to 9 followed by A to Z.
+
+<P>
+   During set-cells operation, clicking on a cell with the left-hand mouse
+   button simply sets that cell to the currently selected cell-type
+   as being displayed by the TYPE icon. If the cell-type is such that
+   it requires a zone-number than it takes on the currently selected
+   zone-number as displayed by the ZONE icon.
+<P>
+   Clicking on a cell with the RIGHT-HAND mouse button sets that cell
+   to type LIVE.
+<P>
+   Setting of a cell's type is confirmed by the new colour it assumes.
+   The zone number associated with the cells may also be displayed in text
+   if there is sufficient space to do so. Set-cells operation looks
+   very much like a simple paint-in-the-boxes game where the currently
+   selected pen colour is changed and displayed via the TYPE icon.
+<P>
+   Setting cells one-by-one can become extremely tedious,if not
+   impossible for large grids. It is therefore much better to set
+   a block of cells by means of a mouse-drag operation.
+   This is one of the few rare places in FLINT where a mouse-drag
+   is needed.  To set a block of cells, press the mouse button on
+   a cell,keep the button down and slowly move the mouse over the
+   cells you wish to set while still keeping the mouse button down.
+   <BR>
+   The block of cells which will be effected by this action gets
+   highlighted while the mouse is being moved. Releasing the
+    mouse button at any stage sets all the currently highlighted
+    cells to the current type (and zone).
+
+<P>
+    When dealing with large grids, it helps to make full use of the
+    ZOOM IN/OUT, ZOOM IN and PAN graphical view icons during the
+    set-cells operation.
+
+
+
+</BODY>
+
+</HTML>

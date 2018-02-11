@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE> SWEEPS OF SOLVER </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> SWEEPS OF SOLVER </H3> </CENTER>
+<P>
+
+At each iteration step, Flint will solve the governing equations pertaining
+to all the relevant field variables one at a time by calling the matrix solver.
+The matrix solver uses a line-by-line method which is a combination of the
+Gauss-Seidel method combined with the TDMA (TriDiagonal Matrix Algorithm) method.
+This is known as the Line Gauss-Seidel (LGS) Method.
+<BR>
+TDMA method can be used for the solution of one dimensional flow problems,
+where the field equations yield a tri-diagonal coefficients matrix thus making
+it extremely easy to solve the problem directly by a forward and backwards
+substitution method.<BR>
+Unfortunately no such technique can be applied to the direct solution of two and
+three dimensional systems as the coefficients matrix no longer retains its
+tri-diagonal shape. Never the less, it is possible to apply the TDMA techniques
+to a line of cells at a time, thus reducing the problem to N*M systems of one
+dimensional TDMA problems. Where; N and M are the number of planes of cells in the
+second and third dimensions.
+<BR> The gauss-seidell method comes into effect when the latest values of the
+field variable along the two adjacent lines of cells are used while calculating
+the TDMA coefficients of a line of cells, which is sandwiched between them.
+<BR> The matrix solver carries out the TDMA technique on all the lines of cells
+along a predefined direction, known as the <I> SWEEP DIRECTION </I>.
+When the sweep direction is 1 all the cells along the I direction form a TDMA
+line. I.e. along each line J is constant. Similarly when the sweep direction is
+2 all the cells along the J direction form a TDMA line. It is recommended
+that the sweep direction should be choosen to be orthogonal to the primary
+flow direction.
+<P>
+Sweeps of solver for each of the field variables define, how many times,
+during each iteration step, the matrix solver is called to recalculate the
+values of that variable.  This is normally once per variable, except pressure
+which is five times. This is because the pressure equation is usually harder to
+converge.
+
+
+
+</BODY>
+
+</HTML>
+

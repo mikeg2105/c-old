@@ -1,0 +1,33 @@
+                  EXTRA EXAMPLE PROGRAMS FOR THE MPI COURSE 
+ 
+ This directory contains a set of example programs provided for the students
+ attending the INTRODUCTION TO MPI Course given by D.Savas on 23.March.2004.
+ Some of the example programs are provided by the Manchester Computer Centre
+ where acknowledgements are embedded in the source.
+ 
+   
+       Example: mpf95 myprog.f95 -lmpi
+      
+      i.e  c  or  C++ 
+          mpcc or  mpCC  
+	  
+  
+  
+ CALCULATING PI BY MONTE-CARLO SIMULATION: pi1.f95 & pi2.f95 
+      These fortran programs use POINT-TO-POINT communications 
+      in a MASTER-SLAVE manner. 
+      Hints:  Use the -dalign compiler option because of the USE mpi statement
+              that uses the MPI module which is compiled with -dalign
+ 
+    
+           i.e. mpf95 pi2.f95 -dalign -lmpi 
+   
+      There is something wrong with pierror.f95. Study it and compare it 
+      with pi1.f95 and pi2.f95. 
+       
+ MOLECULAR DYNAMICS SIMULATION OF LENNARD-JONES SYSTEM using MPI:systolic.cpp
+    This C++ example uses POINT-TO-POINT communications as well as GROUP 
+    communications. 
+    
+     
+  

@@ -1,0 +1,51 @@
+# MPI Makefile for intrompi examples
+
+.SUFFIXES: .f90 .f .o
+
+
+MPI_INCLUDE =  $(MPI_HOME)/include 
+
+ARCH        = 
+COMM        =
+
+LIB_PATH    =
+LIBS        =
+
+#
+# C compiler and options
+#
+CC          = ${MPI_HOME}/bin/mpiCC 
+CLINKER     = ${CC}
+COPTFLAGS    = -O
+
+F90         = ${MPI_HOME}/bin/mpif90
+FLINKER     = $(F90)
+FOPTFLAGS    = -O3
+
+LINKER=$(CLINKER)
+OPTFLAGS=$(COPTFLAGS)
+
+#
+# Object files
+#
+OBJ=    systolic.o
+#	dfill.o \
+#	domove.o \
+#        dscal.o \
+#
+#	velavg.o
+
+#
+# Compile
+#
+systolic1:	$(OBJ)
+	$(CC) -o $@ $(OBJ) $(LIBS)
+
+.cpp.o:
+	$(CC) -c $<
+
+#
+# Clean out object files and the executable.
+#
+clean:
+	rm *.o systolic1 

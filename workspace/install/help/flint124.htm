@@ -1,0 +1,85 @@
+<HTML>
+<HEAD>
+<TITLE> FLINT/2D  GENERAL-GRAPHICAL   </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff" >
+
+<CENTER> <H3> FLINT: GRAPHICAL INTERFACE </H3> </CENTER>
+
+<H3> GRAPHICS ARES: </H3>
+Flint graphical interface screen is divided into following
+three areas:
+
+<UL>
+<LI><b> MAIN AREA:</b> Where the actual geometrical or field
+values are shown. It is the largest part of the screen and is
+normally sensitive to mouse-click events to allow user to interact
+with the components of his model, such as selecting/moving/deleting.
+</LI>
+<LI><b> ICONS AREA:</b> This is located at the right hand side of the FLINT
+ graphics screens displaying sets of icons to allow user to select
+ an action to perform by clicking on the icons, such as MOVE a point,
+ CREATE a Guide Curve or to simply change the viewing properties
+ by zooming panning etc. </LI>
+
+<LI><b> MESSAGE AREA:</b> This is located at the bottom few lines of the
+screen, where helpful messages to prompt user on what to do next
+or WARNING messages to notify user of the limitations of the program
+are displayed. There will normally be no need to perform mouse-click
+operations on this area.
+</LI>
+
+</UL>
+
+<H3> MOUSE ACTIONS: </H3>
+
+ <UL>
+ <LI><B> Clicking:</B> By far the most common mouse interaction with FLINT is
+      the mouse-click operation. Selecting of edges,control points regions etc.
+      are achieved by clicking on or near them.
+      Except in a very few cases (see dragging below) , user will be expected
+      to click the mouse button and<B> release it immediately</B> without dragging it.
+      <UL>
+      <LI>When clicking on the MAIN area to position control points etc., clicking
+      on the right mouse button gives user full control of the exact location
+      of the control point by inviting the user to enter the exact x and y
+      coordinates. Where as left mouse click simply accepts the coordinates from
+      where the mouse is pointing to.</LI>
+      <LI> When clicking on ICONS,  left or the right button can be
+      used interchangably and has the same effect.
+      Exception to this rule are the<I> CELL-TYPE</I> and the<I> ZONE-NUMBER</I>
+      icons in the<B> SETUP, SET-CELLS</B> window.  Each mouse click on these two
+      icons selects a new CELL-TYPE and ZONE-NUMBER respectively.
+      Left mouse button selects the next cell type ( or zone) where as
+      the Right mouse button selects the previous one on the list.</LI>
+      </UL>
+      </LI>
+
+ <LI><b>Moving:</b> In Geometry-Setup screens, when re-positioning grid
+  control points edge control points etc.  mouse pointer should always be moved
+    without holding a mouse button down, i.e. it should not be dragged!  </LI>
+    During geometry setup tasks,after an item such as an edge control point is
+    selected (by clicking), the mouse pointer disappears and the selected item
+    latches onto the mouse, making moving of objects intuative.
+    If a mistake has been made and a wrong point selected pressing ESC
+    or clicking outside the Main-Area will de-select the item and return
+    it to previous position.
+
+ <LI><b> Dragging</b>(i.e. moving button while holding a mouse button down):<BR>
+      Only in following situations mouse dragging is needed:
+      <UL>
+      <LI> In VIEW-GRAPHICS, PROFILES when selecting random profile lines.</LI>
+      <LI> In VIEW-GRAPHICS generally PAN can be achieved by dragging using
+           the LEFT mouse button and ZOOM is achieved by dragging with the
+           RIGHT mouse button  </LI>
+      <LI> In SETUP, SET-CELLS click,hold button down and drag to set a block
+           of cells to the currently selected cell-type.Also in this context
+           block of cells can be turned into <B>live cells </B>by using the right
+           mouse button in stead of the left one.</LI>
+      </UL>
+  </UL>
+
+</BODY>
+
+</HTML>

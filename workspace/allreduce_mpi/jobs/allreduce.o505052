@@ -1,0 +1,55 @@
+tmpdir /tmp/505052.1.parallel.q
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit comp56.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/jobs ; exec env GMPI_MASTER=comp56 GMPI_PORT=33532 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx26-amd64::/usr/local/xerces-c_2_7_0/lib:/usr/local/xalan-c_1_10_0/c/lib:/usr/lib64 DISPLAY=iceberg:24.0 GMPI_MAGIC=272453 GMPI_ID=0 GMPI_NP=4 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.156 /home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/jobs/../allreduce
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp56.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/jobs ; exec env GMPI_MASTER=comp56 GMPI_PORT=33532 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx26-amd64::/usr/local/xerces-c_2_7_0/lib:/usr/local/xalan-c_1_10_0/c/lib:/usr/lib64 DISPLAY=iceberg:24.0 GMPI_MAGIC=272453 GMPI_ID=3 GMPI_NP=4 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.156 /home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/jobs/../allreduce
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp56.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/jobs ; exec env GMPI_MASTER=comp56 GMPI_PORT=33532 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx26-amd64::/usr/local/xerces-c_2_7_0/lib:/usr/local/xalan-c_1_10_0/c/lib:/usr/lib64 DISPLAY=iceberg:24.0 GMPI_MAGIC=272453 GMPI_ID=2 GMPI_NP=4 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.156 /home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/jobs/../allreduce
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp56.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/jobs ; exec env GMPI_MASTER=comp56 GMPI_PORT=33532 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx26-amd64::/usr/local/xerces-c_2_7_0/lib:/usr/local/xalan-c_1_10_0/c/lib:/usr/lib64 DISPLAY=iceberg:24.0 GMPI_MAGIC=272453 GMPI_ID=1 GMPI_NP=4 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.156 /home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/jobs/../allreduce
+MPI initialised...
+Loading arrays
+Arrays loaded....
+Starting timing
+Timing 0
+Timing 0 complete.
+ Reported time 0.000240
+Timing 1
+Timing 1 complete.
+ Reported time 0.000166
+Timing 2
+Timing 2 complete.
+ Reported time 0.000161
+Timing 3
+Timing 3 complete.
+ Reported time 0.000162
+Timing 4
+Timing 4 complete.
+ Reported time 0.000160
+Timing 5
+Timing 5 complete.
+ Reported time 0.000161
+Timing 6
+Timing 6 complete.
+ Reported time 0.000161
+Timing 7
+Timing 7 complete.
+ Reported time 0.000160
+Timing 8
+Timing 8 complete.
+ Reported time 0.000161
+Timing 9
+Timing 9 complete.
+ Reported time 0.000162
+Timings complete, summary follows.
+Timing 00: 0.00024 seconds
+Timing 01: 0.000166 seconds
+Timing 02: 0.000161 seconds
+Timing 03: 0.000162 seconds
+Timing 04: 0.00016 seconds
+Timing 05: 0.000161 seconds
+Timing 06: 0.000161 seconds
+Timing 07: 0.00016 seconds
+Timing 08: 0.000161 seconds
+Timing 09: 0.000162 seconds
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp56.iceberg.shef.ac.uk kill -9 15819 2>/dev/null
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp56.iceberg.shef.ac.uk kill -9 15815 2>/dev/null
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp56.iceberg.shef.ac.uk kill -9 15818 2>/dev/null
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp56.iceberg.shef.ac.uk kill -9 15820 2>/dev/null
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp56.iceberg.shef.ac.uk rm -f /tmp/gmpi_shmem-272453:[0-9]*.tmp

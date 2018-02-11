@@ -1,0 +1,10 @@
+&
+(executable=/home/data01_a/ngs0244/proj/benchtest/sytolic1_ngs_c1)
+(directory=/home/data01_a/ngs0244/proj/examples)
+(maxCpuTime=600)
+(jobType=mpi)
+(count=4)
+(environment=(NGSMODULES clusteruser)
+(stdout=systo1.out)
+(stderr=systo1.err)
+

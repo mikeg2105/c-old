@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<TITLE> PATHC OPTION </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> PATCH OPTION </H3> </CENTER>
+<P>
+ When a geometric domain and the type of problem which will be solved over
+ that domain is defined and the boundary conditions are specified, all that
+ remains is to start the calculations off from some initial values of the
+ field variables for all the cells which make up the computational domain
+ and solve the discreetised governing field equations until a satisfactory
+ convergence is attained. <P>
+ As the solution is iterative, the initial values of the field variables have
+ a very strong bearing on the speed and even the convergence of the solution.<BR>
+ For example, it is possible that a set of conditions corresponding to a
+ perfectly feasible solution may display divergence when the initial
+ values are too far away from the final solutions.</P>
+ <P>
+ Unless PATCH'ed by the user Flint assumes the initial values of all the
+ field variables to be 0.0, except temperatures which are set to 273Kelvin
+ 'i.e. 0 Centigrate'.
+ <P>
+
+ By using this option user
+ can set the values of the field variables to initially guessed values so as
+ to speed up convergence.
+
+ </P>
+
+
+
+</BODY>
+
+</HTML>

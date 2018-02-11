@@ -1,0 +1,6 @@
+
+	allreduce: allreduce.c
+		mpicc allreduce.c -o allreduce
+
+	clean:
+    	rm allreduce.o allreduce

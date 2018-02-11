@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<TITLE> SELECT VARIABLES </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> SELECT VARIABLES </H3> </CENTER>
+<P>
+ Normally, at each iteration step, Flint will solve the governing
+ equations pertaining to all the relevant field variables. For example, in
+ problems involving heat transfer, the enthralpy equation is solved
+ at each iteration. If, on the other hand, the problem does not involve
+ any heat transfer calculations, there will be no need to solve this
+ equation and the residuals will simply be reported to be 0.0.
+ <P>
+ There is normally no need to specify which equations needs to
+ be solved here as Flint deduces such information from the
+ problem and boundary-condition definitions. <BR>
+ However, in types of problems where the convergence is becoming
+ difficult to achieve, a judicious use of this menu can help achieve
+ convergence. It is possible that the effects of the highly coupled
+ governing equations, combined with the values of the field variables
+ which are still too from the solution, will result in badly
+ defined linearised equations, thus causing divergence.
+ In such situations, it may be advisable to remove some of the coupling
+ manually by keeping certain variable(s) fixed while solving for the
+ remainder of the variables. Once the near convergence with a limited
+ set of variables are achieved, the previously fixed variables can be
+ brought back into play by using this options menu, or even by alternately
+ selecting a new set of variables.
+<P>
+ The following are the list of field variables which can be selected
+ for solution:
+ <UL>
+ <LI> U-Velocity </LI>
+ <LI> V-Velocity </LI>
+ <LI> W-Velocity </LI>
+ <LI> Pressure </LI>
+ <LI> Turbulence Kinetic Energy </LI>
+ <LI> Turbulence Eddy Dissapation </LI>
+ <LI> Fluid Properties</LI>
+ <LI> Enthralpy </LI>
+ </UL>
+
+
+
+</BODY>
+
+</HTML>

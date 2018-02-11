@@ -1,0 +1,23 @@
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -V -inherit comp59.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/c++dev/workspace/matdiag_mpi/jobs ; exec env GMPI_MASTER=comp59.iceberg.shef.ac.uk GMPI_PORT=54748 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx24-amd64:/usr/local/sge6.0/lib/lx24-amd64:/usr/lib64:/home1/cs/cs1mkg/lib DISPLAY=iceberg:14.0 GMPI_MAGIC=7073560 GMPI_ID=0 GMPI_NP=1 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.159 /home1/cs/cs1mkg/proj/c++dev/workspace/matdiag_mpi/jobs/../matdiag_mpi 4
+Matrix is 4x4
+There are 1 processor columns.
+0reading rhs vec 
+Matrix on proc 0 is: 
+4 4 0 2 0 1 2 2 3 2 4 -3 0 1 6 1 -6 -5 
+Vec on proc 0 is: 
+0 -2 -7 6 ,
+back sub
+proc 0 row 3
+proc 0 row 2
+proc 0 row 1
+proc 0 row 0
+RHS vector:
+6 0 -4 -7.8 ,
+Solution vector:
+1 0 -0.8 -2 ,
+proc 0
+4 4 6 1 -6 -5 0 2 0 1 0 0 5 2.8 0 0 0 3.9 
+Time taken= 0 seconds.
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -V -inherit -nostdin comp59.iceberg.shef.ac.uk kill -9 23631 2>/dev/null
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -V -inherit -nostdin comp59.iceberg.shef.ac.uk rm -f /tmp/gmpi_shmem-7073560:[0-9]*.tmp
+error: executing task of job 489018 failed: 

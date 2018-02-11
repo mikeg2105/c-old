@@ -1,0 +1,7 @@
+#Makefile for ising model
+CC = pgCC
+CLINKER = ${CC}
+FLAGS = 
+LIBS = -lm
+LINKFLAGS = -g
+VPATH = src:../include

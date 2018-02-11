@@ -1,0 +1,16 @@
+tmpdir /tmp/504802.1.parallel.q
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp45.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/cppdev/workspace/hello_mpi ; exec env GMPI_MASTER=comp45 GMPI_PORT=34277 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx26-amd64 DISPLAY=iceberg:27.0 GMPI_MAGIC=6551771 GMPI_ID=1 GMPI_NP=4 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.145 /home1/cs/cs1mkg/proj/cppdev/workspace/hello_mpi/./ex1
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit comp45.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/cppdev/workspace/hello_mpi ; exec env GMPI_MASTER=comp45 GMPI_PORT=34277 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx26-amd64 DISPLAY=iceberg:27.0 GMPI_MAGIC=6551771 GMPI_ID=0 GMPI_NP=4 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.145 /home1/cs/cs1mkg/proj/cppdev/workspace/hello_mpi/./ex1
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp45.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/cppdev/workspace/hello_mpi ; exec env GMPI_MASTER=comp45 GMPI_PORT=34277 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx26-amd64 DISPLAY=iceberg:27.0 GMPI_MAGIC=6551771 GMPI_ID=2 GMPI_NP=4 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.145 /home1/cs/cs1mkg/proj/cppdev/workspace/hello_mpi/./ex1
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp45.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/cppdev/workspace/hello_mpi ; exec env GMPI_MASTER=comp45 GMPI_PORT=34277 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx26-amd64 DISPLAY=iceberg:27.0 GMPI_MAGIC=6551771 GMPI_ID=3 GMPI_NP=4 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.145 /home1/cs/cs1mkg/proj/cppdev/workspace/hello_mpi/./ex1
+There are 4 processes in my world, and I have rank 3
+There are 4 processes in my world, and I have rank 1
+There are 4 processes in my world, and I have rank 2
+Hello MPI world from C!
+There are 4 processes in my world, and I have rank 0
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp45.iceberg.shef.ac.uk kill -9 19971 2>/dev/null
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp45.iceberg.shef.ac.uk kill -9 19970 2>/dev/null
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp45.iceberg.shef.ac.uk kill -9 19968 2>/dev/null
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp45.iceberg.shef.ac.uk rm -f /tmp/gmpi_shmem-6551771:[0-9]*.tmp
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp45.iceberg.shef.ac.uk kill -9 19973 2>/dev/null
+error: executing task of job 504802 failed: 

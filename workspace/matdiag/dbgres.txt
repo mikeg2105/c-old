@@ -1,0 +1,9 @@
+MALLOC  : operator new[] (size = 12) = 0x9654af0 [vec.cpp:63]
+MALLOC  : operator new (size = 168) = 0x9585c40 [IoUtilsTest.cpp:110]
+MALLOC  : operator new (size = 512) = <unfinished>
+WARNING :     Object file /usr/lib/libstdc++.so.5 does not have debug info.  Address lookups inside this object file will result in a function name only, not a source file location.
+MALLOC  : <continued> 0x96544f8 [libstdc++.so.5:_ZNSt24__default_alloc_templateILb1ELi0EE8allocateEj]
+MALLOC  : operator new (size = 512) = 0x96a9338 [libstdc++.so.5:_ZNSt24__default_alloc_templateILb1ELi0EE8allocateEj]
+MALLOC  : operator new (size = 512) = 0x96a9548 [libstdc++.so.5:_ZNSt24__default_alloc_templateILb1ELi0EE8allocateEj]
+MALLOC  : operator new (size = 512) = 0x95bd3e8 [libstdc++.so.5:_ZNSt24__default_alloc_templateILb1ELi0EE8allocateEj]
+MALLOC  : operator new (size = 24) = 0x9654758 [IoPropertyManager.cpp:61]

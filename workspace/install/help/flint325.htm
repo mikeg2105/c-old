@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<TITLE> DEFINE PROBLEM </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> DEFINE PROBLEM  </H3> </CENTER>
+<P>
+
+
+
+   When a problem is defined, the default physical model used by Flint
+   is that of <i> laminar flow </I> with no heat transfer.
+   However, <B> SETUP -> DEFINE-PROBLEM </B> command will allow the user to
+   switch on extra features to solve for. These features are:
+   <UL>
+   <LI>  Turbulant-Flow ( k-Epsilon model only)</li>
+   <LI>  Heat-transfer calculations. </LI>
+   <LI>  W-Velocities calculations(????)</LI>
+   </UL>
+
+
+   By default Flint solves the momentum and
+   mass conservation equations in terms of u,v (and w for 3D ) velocity
+   components and pressures (p).
+   <P>
+   Switching on the heat-transfer model introduces the energy
+   conservation equation which is solved in terms of enthalpy values.
+   <P>
+   Switching on the turbulence model introduces two extra equations
+   which are solved in terms of Turbulence Energy (E) and Turbulence
+   Dissipation (D), by using the two-equation k-epsilon turbulance
+   model.
+   <P>
+   These features will in turn have a direct bearing on the
+   types of <A HREF="flint327.htm" >boundary conditions </A>that will
+   need to be supplied. For example the walls will now need to have
+   predefined temperatures or heat-flux values and turbulence quantities
+   must be specified at the inlet boundaries.
+
+
+
+</BODY>
+
+</HTML>

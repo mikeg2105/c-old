@@ -1,0 +1,117 @@
+<HTML>
+<HEAD>
+<TITLE> DEFINE GRID  </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> DEFINE-GRID  </H3> </CENTER>
+<P>
+
+ Having defined the geometric features of a model by means of
+ <B>Define-Geometry</B> "and optionally by <B>Refine Geometry</B>" the next stage
+ of dividing this domain into a set of suitably sized, well-structured four-sided
+ computational cells is achieved by the use of Define-Grid command.
+ The Define-Grid task is presented by means of a
+  <A HREF="flint124.htm"> graphical interface</A>.
+
+<BR>
+ <BR>
+ The following two icons are introduced to assist the user ;
+  <UL>
+  <LI>  <A HREF="#DEFGRD">  DEFAULT-GRID</A> </LI>
+  <LI>  <A HREF="#GRDIST"> GRID-DISTRIB. </A> </LI>
+ </UL>
+
+ When in Define-Grid view, only the edges of the regions and their edge-control
+ points (X) are displayed. The object being to define the numbers of cells we
+ wish to distribute along each edge. We do not, however, have  the complete
+  freedom
+ to distribute arbitrary numbers of cells along each individual edge.
+ This is because, for each domain, edges which are logically across from
+ each other will be forced to have the same numbers of cells distributed along
+ them.  This condition ensures that the structural integrity
+ of the complete grid can not be violated as well as making the task of
+ grid-definition almost trivially easy!
+ <P>
+ All edges which have not yet been grided  are displayed in RED.<BR>
+ The edges which are already grided are displayed in GREEN along with
+ the small blue crosses (+) which mark the exact distribution of the
+ grid lines along that edge.<BR>
+ These markers are known as the
+ <A HREF="flgdefi.htm#GRDCNTL" >   Grid-Control-Points </A>.
+ They are usually equally spaced from each other but the spacing scheme
+ can easily be altered by the use of the  <A HREF="#GRDIST"> GRID-DISTRIB.</A>
+ icon. They can also be individually manipulated later  during the
+   <A HREF="flint27.htm"> Refine-Grid</A> stage. <BR>
+<P>
+  To grid an edge, user simply clicks the mouse near its edge-control point.
+  User is then prompted for the number of cells s/he wish to distribute
+  along that edge. Where, s/he may either accept the default offered by
+  clicking the mouse button again or enter a different number and
+  press ENTER. <BR>
+  I.e.:  Double-clicking the mouse will simply grid that edge with
+  the currently defined default number of grid-control-points.
+  Griding one edge will automatically grid all the other edges which are
+  logically across from it in the same manner and with the same numbers
+  of cells.<BR>
+  There are no restrictions as to the chronological order of the gridding
+  operations and already grided edges can always be re-gridded 'say with a
+   different number of cells'.
+
+
+
+<P>
+
+
+ <A NAME="DEFGRD" > </A>
+ <HR>
+ <CENTER> <B> DEFAULT GRID </B> </CENTER> <br>
+
+  During Define-Grid, when the user tries to grid an edge which has not
+  yet been gridded  'and hence displayed in red' he is offered the default
+  number of cells along that edge. Initially this is set to 6 but can be
+  changed by the use of the DEFAULT-GRID icon. <BR>
+  When re-gridding of already gridded edges are attempted, the default
+  offered will be the currently defined number of grids along that edge
+  and not the current default as set by the Default-Grid Icon. <BR>
+
+
+
+ <A NAME="GRDIST" > </A>
+ <HR>
+ <CENTER><B> GRID-DISTRIBUTION </B></CENTER> <br>
+   By default, grid points along each edge are distributed equally spaced
+  from each other. However, this can be changed by the use of the
+  <B> Grid-Distrib. </B> icon. <BR>
+  When clicked on, this icon presents the user with a menu of three choices
+  which are;
+
+  <UL>
+  <LI>  UNIFRM: Equally spaced grid points, </LI>
+  <LI>  SKEWED: Distance between grid points increasing or decreasing, </A> </LI>
+  <LI>  BELL:   Distance between grid points are increasing then decreasing
+                or visa-versa. </LI>
+
+ </UL>
+
+  Selecting SKEWED or BELL distribution leads to further dialog tables
+  to define the expansion factors etc.
+  An expansion factor of 1.0 implies a uniform grid.
+  An expansion factor of<I> <B> n </B></I> where n is a real number implies
+  that the distance between the last two grid-points is <I> n </I> times the
+  distance between the first two grid points.
+
+
+ <P>
+  IMPORTANT NOTE: Selecting a particular grid-distribution-type does not
+  effect the already gridded edges. The grid-distibution type  only
+  applies to the newly gridded or re-gridded edges following the selection.
+
+
+
+</BODY>
+
+</HTML>

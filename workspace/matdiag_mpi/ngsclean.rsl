@@ -1,0 +1,4 @@
+&
+(executable=/bin/rm)
+(arguments= -f *.o matdiag_mpi)
+(directory=proj/cppdev/workspace/matdiag_mpi )

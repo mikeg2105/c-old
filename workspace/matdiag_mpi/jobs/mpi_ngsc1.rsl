@@ -1,0 +1,12 @@
+&
+(executable=../matdiag_mpi )
+(directory=proj/cppdev/workspace/matdiag_mpi/jobs )
+(arguments=4 )
+(maxCpuTime=600 )
+(jobType=mpi )
+(count=4)
+(environment=(NGSMODULES clusteruser) )
+(stdout=expjan1.out )
+(stderr=expjan1.err )
+
+

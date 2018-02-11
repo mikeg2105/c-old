@@ -1,0 +1,2 @@
+g++ -g   -o matdiag.o -c matdiag.cpp
+g++ -g  -o ./matdiag ./matdiag.o ../lib/libIoUtils.a

@@ -1,0 +1,50 @@
+tmpdir /tmp/505107.1.parallel.q
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit comp58.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/jobs ; exec env GMPI_MASTER=comp58 GMPI_PORT=39853 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx26-amd64::/usr/local/xerces-c_2_7_0/lib:/usr/local/xalan-c_1_10_0/c/lib:/usr/lib64 DISPLAY=iceberg:24.0 GMPI_MAGIC=9085700 GMPI_ID=0 GMPI_NP=1 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.158 /home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/jobs/../allreduce
+MPI initialised...
+Loading arrays
+Arrays loaded....
+Starting timing
+Timing 0
+Timing 0 complete.
+ Reported time 0.000085
+Timing 1
+Timing 1 complete.
+ Reported time 0.000025
+Timing 2
+Timing 2 complete.
+ Reported time 0.000023
+Timing 3
+Timing 3 complete.
+ Reported time 0.000023
+Timing 4
+Timing 4 complete.
+ Reported time 0.000023
+Timing 5
+Timing 5 complete.
+ Reported time 0.000026
+Timing 6
+Timing 6 complete.
+ Reported time 0.000024
+Timing 7
+Timing 7 complete.
+ Reported time 0.000023
+Timing 8
+Timing 8 complete.
+ Reported time 0.000023
+Timing 9
+Timing 9 complete.
+ Reported time 0.000023
+Timings complete, summary follows.
+Timing 00: 8.5e-05 seconds
+Timing 01: 2.5e-05 seconds
+Timing 02: 2.3e-05 seconds
+Timing 03: 2.3e-05 seconds
+Timing 04: 2.3e-05 seconds
+Timing 05: 2.6e-05 seconds
+Timing 06: 2.4e-05 seconds
+Timing 07: 2.3e-05 seconds
+Timing 08: 2.3e-05 seconds
+Timing 09: 2.3e-05 seconds
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp58.iceberg.shef.ac.uk rm -f /tmp/gmpi_shmem-9085700:[0-9]*.tmp
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -inherit -nostdin comp58.iceberg.shef.ac.uk kill -9 29264 2>/dev/null
+error: executing task of job 505107 failed: 

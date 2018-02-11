@@ -1,0 +1,5 @@
+GRAM Job failed because the user proxy expired (job is still running) (error code 131)
+globus_gram_client_callback_allow successful
+GRAM Job submission successful
+GLOBUS_GRAM_PROTOCOL_JOB_STATE_PENDING
+GLOBUS_GRAM_PROTOCOL_JOB_STATE_FAILED

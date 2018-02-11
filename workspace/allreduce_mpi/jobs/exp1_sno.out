@@ -1,0 +1,32 @@
+==Score parallel start script==
+128 nodes were logged as being online at 08:00 hours today
+0 nodes are disabled from the Grid Engine queues
+39 nodes are currently in use
+
+Disk quotas for user wrsmg (uid 101649): 
+     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
+ufavserv2:/export/home/ufaserv2_wrga
+                1201846  5242880 10485760           27151       0       0        
+PE hostfile is : /usr/local/sge6.0/default/spool/snowdon/active_jobs/124220.1/pe_hostfile
+The contents of the hostfile are:
+snowdon.leeds.ac.uk 1 master.q@snowdon.leeds.ac.uk UNDEFINED
+comp052.leeds.ac.uk 1 long.q@comp052.leeds.ac.uk UNDEFINED
+comp053.leeds.ac.uk 1 long.q@comp053.leeds.ac.uk UNDEFINED
+comp039.leeds.ac.uk 1 long.q@comp039.leeds.ac.uk UNDEFINED
+the Job ID for this job is: 124220
+The Score hostfile is in /home/ufaserv2_wrga/wrsmg/.score/ndfile.124220
+The contents are comp052.leeds.ac.uk comp053.leeds.ac.uk comp039.leeds.ac.uk
+==Score parallel start script==
+SCore-D 5.8.2 connected.
+Timing 00: 0.001215 seconds
+Timing 01: 0.001218 seconds
+Timing 02: 0.001225 seconds
+Timing 03: 0.001201 seconds
+Timing 04: 0.001218 seconds
+Timing 05: 0.001166 seconds
+Timing 06: 0.001169 seconds
+Timing 07: 0.001173 seconds
+Timing 08: 0.001193 seconds
+Timing 09: 0.001169 seconds
+==Score parallel stop script==
+==Score parallel stop script==

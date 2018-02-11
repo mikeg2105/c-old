@@ -1,0 +1,15 @@
+#make include file for building ising model on iceberg
+MPI_HOME = /usr/local/mpich-gm2_PGI
+MPI_INCLUDE = $(MPI_HOME)/include
+CC = ${MPI_HOME}/bin/mpiCC
+COPTFLAGS = -O -fast
+CLINKER = ${CC}
+FLAGS = 
+LIBS = -lm
+LINKFLAGS = -g
+VPATH = src:../include
+
+OPTFLAGS= $(COPTFLAGS)
+
+
+

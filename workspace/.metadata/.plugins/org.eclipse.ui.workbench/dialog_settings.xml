@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="org.eclipse.cdt.make:1.2.1"/>
+		<item value="org.eclipse.cdt.linux.gtk:1.2.1"/>
+		<item value="org.eclipse.cdt:1.2.1"/>
+		<item value="com.redhat.eclipse.changelog.feature:1.0.0"/>
+		<item value="org.eclipse.platform:2.1.2"/>
+		<item value="org.eclipse.platform.source:2.1.2"/>
+		<item value="org.eclipse.cdt.managedbuilder:1.2.1"/>
+		<item value="org.eclipse.platform.linux.gtk.source:2.1.2"/>
+		<item value="org.eclipse.cdt.source:1.2.1"/>
+		<item value="org.eclipse.jdt.source:2.1.2"/>
+		<item value="org.eclipse.pde:2.1.2"/>
+		<item value="org.eclipse.jdt:2.1.2"/>
+		<item value="org.eclipse.platform.linux.gtk:2.1.2"/>
+	</list>
+	<section name="ImportResourcesAction">
+		<item key="WizardListSelectionPage.STORE_SELECTED_WIZARD_ID" value="org.eclipse.ui.wizards.import.FileSystem"/>
+	</section>
+	<section name="ShowViewDialog">
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_CATEGORY_ID" value="C++"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_WIZARD_ID" value="org.eclipse.cdt.managedbuilder.ui.wizards.StdCCWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+</section>

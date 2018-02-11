@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<TITLE> PRESSURE BOUNDARIES </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> PRESSURE BOUNDARY CONDITIONS </H3> </CENTER>
+<P>
+ In order to model problems where the inlet and exit pressures rather than the
+ velocity values are known, pressure boundary conditions can be used.
+ Examples include problems involving natural convection and problems where multiple
+ exits to the domain exist and the division of flow between the outlets
+ are determined by the pressure difference between them.
+ Pressures are specified relative to the operating pressure and are
+ in terms of Pascals. Turbulence Intensity can not be specified on pressure
+ boundaries. Therefore even if the turbulence is switched on, user will not
+ be asked to input turbulence values at the inlet boundaries.
+ One way of overcoming this restriction will be to patch-in turbulence
+ dissapation-rate and energy at the inlet cells, via the expert-patch menu.
+
+
+
+
+
+
+</BODY>
+
+</HTML>

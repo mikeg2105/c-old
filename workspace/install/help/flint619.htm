@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<TITLE> PRESSURE SOLVER </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> PRESSURE SOLVER </H3> </CENTER>
+<P>
+
+As the pressure-correction equation is one of the hardest equations to
+solve, Flint has built-in options to treat it specially and tackle it by
+using what is known as 'Multigrid' techniques.By default Flint uses the
+built-in <A href='flint618.htm'> LGS Solver<A>. LGS solver works well in
+effectively propogating error corrections between the neighbouring lines
+of cells. However this may not be as effective and desirable when the
+error correction needs to be propogated rapidly down the domain. This is
+particularly the case in problems involving very large numbers of cells.
+<P>
+What is needed is a mechanism for a rapid progression of the information
+beyond the immediate lines of cells. This is implemented by means of
+the Multigrid mechanism. This involves automatic successive corsening of
+the original grid into a number of coarser grid levels. Or in other words
+the original finite-volumes are combined together in a systematic manner
+to form larger super-volumes and the transport equations are solved for
+these super-volumes. The results are then transfered back to the original
+volumes level, thus enabling the faster propogation of information while
+still retaining the local error propogation features.
+<P>
+In multi-grid terminology the process of coarsening of the grid is known
+as creating a new grid level. The original grid being level-1.
+In Multi-grid terminology every level contains super-cells each of which
+is made up of 3*2=6 cells of the previous level.
+Maximum number of Multi-Grid levels is set at 6 but can be redefined by
+the user.
+<P>
+A strategy for moving between levels is adopted so that when the rate of
+reduction of the residuals at a particular grid-level falls below
+a predefined ratio then the calculations are performed on a coarser grid.
+Another rule states that if the calculations appear to be sufficiently
+converged at a level then the calculations are performed on a finer grid
+during the next iteration. These two factors are known as the residual
+reduction parameter and the termination criteria respectively and can
+be altered by the user.
+The block correction option accelerates the convergence by calculating
+global corrections which drive the solution towards a solution by applying
+global conservation conditions.
+
+
+<BR>
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,163 @@
+<HTML>
+<HEAD>
+<TITLE> VIEW MENU </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> VIEW MENU </H3> </CENTER>
+<P>
+  This menu item contains all the graphical visualisation tools provided
+  by Flint to display the results of the CFD calculations.
+
+  It contains the following commands or sub menus;
+
+  <UL>
+  <LI> <A HREF="#OUTLINE">  OUTLINE </A></LI>
+  <LI> <A HREF="#GRID"> GRID </A> </LI>
+  <LI> <A HREF="#VECTORS"> VECTORS </A> </LI>
+  <LI> <A HREF="#CONTOURS">CONTOURS </A> </LI>
+  <LI> <A HREF="#CONTOURS">FILLED-CONTOURS </LI>
+  <LI> <A HREF="#PROFILES">PROFILES </A></LI>
+  <LI> <A HREF="#XYPLOTS">XYPLOTS </A></LI>
+  <LI> <A HREF="#OPTIONS">OPTIONS </A></LI>
+  </UL>
+<HR>
+<A NAME="OUTLINE" > </A>
+  The OUTLINE command draws the geometrical outlines of the domain,
+  which is definable as the wall/live_cells boundary. This command
+  is available as soon as the computational grid is fully defined by
+  means of the SETUP menu or by reading in a CASE file.
+  <P>
+
+<HR>
+<A NAME="GRID" > </A>  GRID command draws the outlines of the computational grid by drawing
+  the finite volume boundaries. This command is also available after
+  the full definition of the computational grid.
+
+  <P>
+<HR>
+<A NAME="VECTORS" > </A>
+  VECTORS command displays the velocity vectors. There will be a single
+  vector drawn for each computational(live) cell within the domain.
+  These vectors will be colour coded according to the magnitude of the
+  velocity. User is given the option to change the scaling or the colour
+  coding of these vectors via the OPTIONS -> PARAMETERS menu.
+
+ <P>
+ <HR>
+<A NAME="CONTOURS" > </A>
+ CONTOURS and FILLED-CONTOURS menus work in the same way, drawing the
+ equi-value contours for any selected field variable. The only
+ difference between the two being that, in the case of filled-contours,
+ the areas between the contours are filled with the appropriate colours.
+
+
+ <P>
+ <HR>
+<A NAME="PROFILES" > </A>
+ PROFILES are used for the graphical display of the variations of a selected
+ variable along a particular line.
+ The line along which the profile will be displayed can be selected to be
+ one of the following types;
+
+ <UL>
+ <LI> Along I-Grid lines </LI>
+ <LI> Along J-Grid lines </LI>
+ <LI> Along the X-Axes </LI>
+ <LI> Along the Y-axes </LI>
+ <LI> Along arbitrary lines </LI>
+ </UL>
+
+ For the first four options, user will be invited to enter the
+ number of profiles he requires, so that a series of profiles
+ will be displayed along the specified direction.<BR>
+ The case of arbitrary profiles work differently. Instead of
+ being invited to enter the number of profiles required, the user
+ will be invited to define a line 'by means of the mouse', along
+ which the profiles will be displayed.<BR>
+ This is one of the few instances of the need for the mouse-drag
+ operation in Flint. User will be expected to define the arbitrary
+ line by clicking the mouse button down at one end of the line
+ and dragging the mouse while keeping the mouse button down.
+ Flint will display the line while this operation takes place so
+ that it can be located to users satisfaction. When satisfied
+ user can define the final end of the line by releasing the button
+ and the profiles are displayed immediately along this line.
+ There is no limit to the number of profiles that can be
+ drawn on the same graph by repeating the process above.
+<P>
+<HR>
+<A NAME="XYPLOTS" > </A>
+XYPLOTS command can be used to draw XY plots of the selected set of
+flow-field variables along a specified line. Inputs for this option
+are by means of the keyboard rather than the mouse. That is to say
+the space coordinates of the lines must be entered manually.<BR>
+The procedure for plotting involves the following steps;
+<UL>
+<LI> Get-Data: This involves specifying a line and a list of variables
+               which will be recorded over that line. </LI>
+<LI> Chose-Data: Each set of variables picked-up by Get-Data is referred
+                to as a TABLE. Chose data selects which table to use
+                for the subsequent plotting operation. Tables are numbered
+                from 1 onwards in the order of their creation.</LI>
+<LI> Plot : Plot a selected list of variables from the currently chosen
+            table. Variables are numbered according to the order of their
+            selection during the GET-DATA stage above. Selecting more than
+            one variable will allow plotting of multiple variables on the
+            same plot.</LI>
+<LI> Display-Table,Delete-Table,Write-Table,Options are auxiliary commands
+     to help manage tables of data. </LI>
+</UL>
+
+<P>
+<HR>
+<A NAME="OPTIONS" > </A>
+OPTIONS command controls a few of the graphics related parameters.
+     <BR> These are:
+     <UL>
+     <LI> Rescale: This allows the user to attribute different scaling
+          constants for X and Y directions, producing distortion effects.
+          It may be of use when trying to view domains which may need to be
+          expanded in one direction so as to be able to discriminate
+          fine geometrical features.
+          </LI>
+     <LI> Mirror View: This allows a mirror view of a graph to be shown
+          alongside the actual view.It may be of use for the visualisation
+          of axi-symetric problems.
+          </LI>
+     <LI> Colour List: Allows the user to change some of the default colours
+          such as the grid and outline colour.
+          </LI>
+     <LI> Parameters: Graphics related parameters which include;
+           <UL>
+             <LI> Vector Scaling factor: Exaggerate or reduce the arrow
+                  sizes when plotting vector graphs.</LI>
+             <LI> Draw Arrowheads: Controls drawing of vector heads. </LI>
+             <LI> Profile Scaling Factor: Exaggerate or reduce the height of
+                  the profiles when drawing profiles </LI>
+             <LI> Fill Profiles: Draws solid colour profiles by
+                  filling the area between the profile and the base of the profile
+                    </LI>
+             <LI> Set Profile range, Contour Range and Vector Scaling Range:
+                  These are usually automatically selected by Flint to cover
+                  all the values within the computational domain, but user may
+                  define them manually to investigate finer variations around
+                  a smaller range.
+                  </LI>
+          </LI>
+     </UL>
+
+
+
+
+
+
+
+
+
+</BODY>
+
+</HTML>

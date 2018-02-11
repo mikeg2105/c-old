@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<TITLE> GEOMETRY DEFINITION  </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+ <H3> GLOSSARY OF FLINT GEOMETRY TERMS </H3>
+
+<HR>
+<A NAME="REGION" > </A>
+<b> REGION: </B> <br>
+The complete flint/2D geometry is made up of connected, four-sided regions
+"quadrilaterals".
+A region will always have four corner-points and four edges, which connect
+these four corner points to form a quadrilateral.
+
+<HR>
+<A NAME="CORNER" > </A>
+<b> CORNER: </B> <br>
+The complete flint/2D geometry is made up of connected, four-sided regions
+"quadrilaterals" with four corners. There can be maximum of four edges
+connected to each corner.
+
+
+<HR>
+<A NAME="EDGE" > </A>
+<b> EDGE: </B> <br>
+ Each flint/2D region is enclosed by four edges. An edge is a curve which
+ connects the neighbouring corners of a region.
+
+
+<A NAME="EDGETYPE" > </A>
+
+
+<HR>
+<b> EDGE-TYPE: </B> <BR>
+<A NAME="EDGECNTL" > </A>
+Each edge  have an associated edge-type which determines the type of curve
+which defines that edge. Currently the following edge types are allowed:
+
+<OL>
+<LI> A Straight line</LI>
+<LI> Two connected lines </LI>
+<LI> A 3-point spline </LI>
+<LI>  A parabola </LI>
+<LI> A circular arc </LI>
+</OL>
+
+An edge can also be locked onto a guide-curve, in which case it stops
+having an associated  curve-type and follows the guide-curve.
+
+<HR>
+<B> EDGE-CONTROL-POINT:</B> <BR>
+Apart from the two corner points, every edge in flint-geometry has an
+intermediate point known as the edge-control-point. The position of this
+point is displayed only during the Refine-Geometry stage by a red X.
+<BR> It is used as the third control point of the curve which
+defines the shape of that edge.<BR>
+ This is why the edge-types shown in the table above are chosen carefully
+ to be only those types of curves which can be fully definable by at most
+  three points, i.e. two corner points and one edge-control point.
+<BR>
+ This, what appears to be the restriction to five edge-types can easily
+ be overcome by means of  GUIDE-CURVES, which allow edges to follow
+ any user-defined curve with many control points.
+
+<P>
+
+<A NAME="GRDCNTL" > </A>
+<HR>
+<B> GRID-CONTROL-POINTS:</B> <BR>
+
+ Grid generation in FLINT is performed by;
+  <UL>
+  <LI>  For each region, define the grid distribution along each edge. </LI>
+  <LI>  Using these points, known as the Grid-Control-Points, griding of the
+        interior regions are done automatically. </LI>
+  </UL>
+
+</BODY>
+
+</HTML>

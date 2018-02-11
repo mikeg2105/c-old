@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<TITLE> FLINT/2D LINEARISING </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+<P>
+
+<CENTER> <H3> LINEARISATION AND RESIDUAL CALCULATIONS</H3> </CENTER>
+<P>
+
+Flint produces a report of residuals for each equation
+once per complete iteration. These residuals provide a
+measure of how well each governing equation is satisfied
+averaged over all the cells in the computational domain.
+<P>
+ Consider a single (live) cell (P), which is surrounded
+ by 4 cells E,W,N and S, corresponding to East,West, North
+ and South neighbours.
+ After local linearisation and discretization, the conservation
+equation for any field variable can be expressed in the following
+general format;
+<P>
+<B> ApTp = Ae*Te + Aw*Tw + An*Tn + As*Ts + S </B>
+<P>
+<B> Where; Ap = Ae + Aw + An + As + S </B>
+
+<P> <B> T </B> stands for any one of the field variables u-velocity,
+v-velocity,turbulence energy, turbulence dissipation and enthralpy
+<BR> <B> S </B> stands for the source (or sink) terms which represents the
+creation (or destruction) of the field variable within the cell(P).
+<BR> Ae,Aw,An and As are the finite difference coefficients which
+represent the combined effects of convection and diffusion through the
+volume of cell P.
+<P>
+ During the first iteration residuals reported corresponds to the imbalance
+ in the above equation summed over the complete computational domain.
+ That is ; <P>
+
+ Residual <B> R = summed over all cells( Ae*Te + Aw*Tw + An*Tn + As*Ts + S -
+ ApTp) </B>
+<P>
+After the first iteration Flint reports residuals in a normalised form
+by simply dividing <B> R </B> by <B> SUM </B>
+<BR> where; <B>  SUM= summed over all cells ( ApTp ) </B>
+<P>
+That is to say, the residuals are normalised by dividing the imbalance
+by the coefficient of the left hand side of the finite difference equation.
+
+<P>
+Reporting of the residuals for pressure values are slightly different
+to other field variables. What is reported as pressure residuals are infact
+the mass-imbalance driven from the mass continuity equation, which simply
+states that what goes in must come out.
+
+
+</BODY>
+
+</HTML>

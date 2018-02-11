@@ -1,0 +1,11 @@
+&
+(executable=../allreduce )
+(directory=proj/cppdev/workspace/allreduce_mpi/jobs )
+(maxCpuTime=600 )
+(jobType=mpi )
+(count=4)
+(environment=(NGSMODULES clusteruser) )
+(stdout=c1exp4.out)
+(stderr=c1exp4.err)
+
+

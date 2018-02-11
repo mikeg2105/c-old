@@ -1,0 +1,9 @@
+&
+(executable=../allreduce)
+(directory=/home/ufaserv2_wrga/wrsmg/proj/cppdev/workspace/allreduce_mpi/jobs)
+(maxCpuTime=600)
+(jobType=mpi)
+(count=1)
+(stdout=snexp1.out)
+(stderr=snoexp1.err)
+

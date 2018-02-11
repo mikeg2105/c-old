@@ -1,0 +1,9 @@
+&
+(executable=./ex1)
+(directory=intrompi)
+(maxCpuTime=600)
+(jobType=mpi)
+(count=4)
+(stdout=ex1.out)
+(stderr=ex1.err)
+

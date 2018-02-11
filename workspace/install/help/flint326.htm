@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE> PHYSICAL CONSTANTS </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> PHYSICAL CONSTANTS </H3> </CENTER>
+
+
+  <P>
+   Physical characteristics of the flow media such as the <b> density </B> and
+   <b> viscosity </B> of fluid media
+   can be defined by means of the <B> SETUP -> PHYSICAL-CONSTANTS </B> command.
+   <BR>
+   If the problem includes heat-transfer calculations, as set by the
+   <A HREF="flint325.htm"> Define-Problem </A> command, user will also be requested to enter the details of
+   how density and viscosity varies with temperature as well as the thermal-
+   conductivity and heat-capacity properties of the flow media. <BR>
+   There are two ways of defining the temperature dependent properties; namely
+   as a polynomial series or as a set of piece-wise linear regions.
+   <BR>
+    If the polynomial option is used the user will need to enter the
+    number of coefficients required <I> (n) </I> and the actual values of the
+    coefficients <I> (a) </I>  in the formulea; <BR> <BR>
+
+     <b> property = a0  + a1*t + a2*t^2 + a3*t^3 ... an*t^n </B>
+     <BR> <BR>
+   If on the other hand a piece-wise linear aproximation is used the user will
+   be asked to enter a set of n (property - temperature) pairs which defines
+   the bounds of (n-1) regions. The property being assumed to vary linearly
+   within each region.
+
+
+
+
+
+</BODY>
+
+</HTML>

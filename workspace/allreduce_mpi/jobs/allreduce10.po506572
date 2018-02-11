@@ -1,0 +1,5 @@
+-catch_rsh /usr/local/sge6.0/default/spool/comp40/active_jobs/506572.1/pe_hostfile /usr/local/mpich-gm2_PGI/bin/mpirun
+Machine file is /tmp/506572.1.parallel.q/machines
+comp40.iceberg.shef.ac.uk:4
+comp47.iceberg.shef.ac.uk:2
+comp49.iceberg.shef.ac.uk:4

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraryInfos>
+    <libraryInfo home="/usr" version="???">
+        <bootpath>
+            <entry path="/usr/jre/lib/rt.jar"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="/usr/jre/lib/ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="/usr/lib/endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+</libraryInfos>

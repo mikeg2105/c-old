@@ -1,0 +1,18 @@
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -V -inherit comp53.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/c++dev/workspace/fscalapack/jobs ; exec env GMPI_MASTER=comp53.iceberg.shef.ac.uk GMPI_PORT=39014 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx24-amd64:/usr/local/sge6.0/lib/lx24-amd64:/usr/local/sge6.0/lib/lx24-amd64:/usr/lib64:/home1/cs/cs1mkg/lib:/usr/local/xerces-c_2_7_0/lib:/usr/local/xalan-c_1_10_0/c/lib:/usr/lib64:/home1/cs/cs1mkg/lib:/usr/local/xerces-c_2_7_0/lib:/usr/local/xalan-c_1_10_0/c/lib:/usr/lib64:/home1/cs/cs1mkg/lib DISPLAY=iceberg:10.0 GMPI_MAGIC=5742804 GMPI_ID=0 GMPI_NP=2 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.153 /home1/cs/cs1mkg/proj/c++dev/workspace/fscalapack/jobs/example1.exe
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -V -inherit -nostdin comp53.iceberg.shef.ac.uk cd /home1/cs/cs1mkg/proj/c++dev/workspace/fscalapack/jobs ; exec env GMPI_MASTER=comp53.iceberg.shef.ac.uk GMPI_PORT=39014 GMPI_SHMEM=1 LD_LIBRARY_PATH=/usr/local/sge6.0/lib/lx24-amd64:/usr/local/sge6.0/lib/lx24-amd64:/usr/local/sge6.0/lib/lx24-amd64:/usr/lib64:/home1/cs/cs1mkg/lib:/usr/local/xerces-c_2_7_0/lib:/usr/local/xalan-c_1_10_0/c/lib:/usr/lib64:/home1/cs/cs1mkg/lib:/usr/local/xerces-c_2_7_0/lib:/usr/local/xalan-c_1_10_0/c/lib:/usr/lib64:/home1/cs/cs1mkg/lib DISPLAY=iceberg:10.0 GMPI_MAGIC=5742804 GMPI_ID=1 GMPI_NP=2 GMPI_BOARD=-1 GMPI_SLAVE=192.168.1.153 /home1/cs/cs1mkg/proj/c++dev/workspace/fscalapack/jobs/example1.exe
+BLACS ERROR 'Illegal grid (2 x 3), #procs=2'
+from {-1,-1}, pnum=1, Contxt=-1, on line -1 of file 'BLACS_GRIDINIT/BLACS_GRIDMAP'.
+
+[1] MPI Abort by user Aborting program !
+[1] Aborting program!
+BLACS ERROR 'Illegal grid (2 x 3), #procs=2'
+from {-1,-1}, pnum=0, Contxt=-1, on line -1 of file 'BLACS_GRIDINIT/BLACS_GRIDMAP'.
+
+[0] MPI Abort by user Aborting program !
+[0] Aborting program!
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -V -inherit -nostdin comp53.iceberg.shef.ac.uk kill -9 1480 2>/dev/null
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -V -inherit -nostdin comp53.iceberg.shef.ac.uk kill -9 1485 2>/dev/null
+error: executing task of job 493485 failed: 
+error: executing task of job 493485 failed: 
+/usr/local/sge6.0/bin/lx24-amd64/qrsh -V -inherit -nostdin comp53.iceberg.shef.ac.uk rm -f /tmp/gmpi_shmem-5742804:[0-9]*.tmp
+error: executing task of job 493485 failed: 

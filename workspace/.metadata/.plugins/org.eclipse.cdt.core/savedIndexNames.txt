@@ -1,0 +1,1 @@
+/home1/cs/cs1mkg/proj/cppdev/workspace/.metadata/.plugins/org.eclipse.cdt.core/3309194867.index

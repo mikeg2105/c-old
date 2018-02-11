@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<TITLE> BOUNDARY CONDITIONS </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> BOUNDARY CONDITIONS </H3> </CENTER>
+<P>
+
+
+
+   <P>
+    Once the type of problem which is being tackled is defined by means
+    of the <A HREF="flint325.htm"> Define-Problem </A>( and optionally
+    <A HREF="flint320.htm"> Boundary-Options </A>) command, actual
+    boundary conditions can then be set by using the BOUNDARY-CONDITIONS
+    graphical user interface.
+   <P>
+    The BOUNDARY-CONDITIONS interface looks exactly like the
+    <A HREF="flint34.htm"> Set-Cells </A>
+    interface except that clicking on a cell does not change its cell-type
+    but sets the boundary conditions for all the cells of that type and
+    zone number.<P>
+    It is at the boundary-conditions stage that the zone numbers associated
+    with the bondary cells comes into effect. Setting the boundary conditions
+    for a single cell automatically set the same bondary conditions for all the
+    cells of same type and zone number.<P>
+    For example, to set the boundary conditions for INLET-1 cells simply
+    click-on one of the INLET-1 cells.<BR>
+    This will pop-up a table allowing
+    the user to enter the boundary conditions which will be applied to all cells
+    of type=INLET and zone=1.
+    <BR>
+     These will generally be the <B> U-Velocity,V-Velocity </B> values and
+    optionally <B> Turbulence Intensity </B> and <B>Temperature </B>values if turbulence and
+    heat-transfer models had been activated via the <A HREF="flint325.htm" >
+    Define-Problem </A> command.
+    <P>
+    If the fixed pressure boundaries option is enabled via the
+    <A HREF="flint320.htm" > Boundary-Options </A> command, then the user
+    will be requested to enter the pressures, rather than the
+    velocity values.<BR>
+
+
+
+
+</BODY>
+
+</HTML>

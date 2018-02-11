@@ -1,0 +1,7 @@
+#Makefile for ising model
+CC = g++
+CLINKER = ${CC}
+FLAGS = 
+LIBS = -lm
+LINKFLAGS = -ggdb -Wall -g3
+VPATH = src:../include

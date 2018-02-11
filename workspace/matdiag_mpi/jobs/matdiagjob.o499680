@@ -1,0 +1,7 @@
+tmpdir /tmp/499680.1.parallel.q
+Warning: Command line arguments for program should be given
+after the program name.  Assuming that 4 is a
+command line argument for the program.
+Missing: program name
+Program ../matdiag_mpi either does not exist, is not 
+executable, or is an erroneous argument to mpirun.

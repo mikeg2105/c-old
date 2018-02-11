@@ -1,0 +1,26 @@
+# MPI Makefile for intrompi examples
+#make include file for building ising model on ngs compute1 (leeds)
+.SUFFIXES: .f90 .f .o
+
+
+MPI_INCLUDE =  $(MPI_HOME)/include 
+
+ARCH        = 
+COMM        =
+
+LIB_PATH    =
+LIBS        =
+
+#
+# C compiler and options
+#
+CC          = ${MPI_HOME}/bin/mpiCC 
+CLINKER     = ${CC}
+COPTFLAGS    = -O
+
+F90         = ${MPI_HOME}/bin/mpif90
+FLINKER     = $(F90)
+FOPTFLAGS    = -O3
+
+LINKER=$(CLINKER)
+OPTFLAGS=$(COPTFLAGS)

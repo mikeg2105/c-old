@@ -1,0 +1,11 @@
+#Makefile for glvizsimple model
+CC = pgCC
+CPP=pgcc
+CLINKER = ${CC}
+CLINKER = ${CC}
+CPPLINKER = ${CPP}
+FLAGS = 
+LINKFLAGS = -g
+VPATH = src:../include
+LIB = -L/usr/X11R6/lib64 -lGL -lX11
+INCLUDE = -I/usr/include 

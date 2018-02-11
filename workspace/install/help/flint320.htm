@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<TITLE> BOUNDARY OPTIONS </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> BOUNDARY OPTIONS </H3> </CENTER>
+<P>
+
+
+  <P>
+    More advanced features relating to the boundary conditions can be
+    specified by means of the <B> SETUP -> BOUNDARY-OPTIONS </B> command.
+    These are
+    <UL>
+    <LI> <A HREF="flint323.htm" >Link settings: </a> Enabling this option
+    allows finer control over the interactions between the boundary nodes and
+    their adjacent live-cells. For most problems default built-in links will be
+    sufficient. </LI>
+    <LI> <A HREF="flint322.htm"> Inlet turbulence quantities:</A> This enables the user to specify the values
+    for the kinetic energy and dissapation rate of turbulence at the inlet
+    boundaries. If this option is not enabled then the inlet turbulence
+    intensity, together with a length-scale drived from the size of the inlet
+    will be used to determine the inlet values of kinetic energy and
+    dissipation. </LI>
+    <LI> Flux boundary conditions: When the heat transfer calculations
+    are switched on, this option will allow the user to specify the
+    boundary conditions in terms of heat-flux in Watts per meter square.
+    Adiabatic walls can be simulated by setting the heat-flux to zero.</LI>
+    <LI>  External heat transfer walls: This option enables the specification
+    of the wall boundary conditions in terms of the external heat transfer
+    coefficient and the temperature of the external heat sink ( or source )</LI>
+    <LI> <A HREF="flint321.htm"> Allow fixed pressure boundaries:</a> This option allows the user to
+    specify at the inlet boundaries the total pressure, instead
+    of the velocities. Pressure boundary conditions should be used in situations
+    where there is more than one exit from the domain.</LI>
+    </UL>
+
+
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,98 @@
+GeneralStart
+  DefDest   "flint"
+  Title     Flint Installation
+  Message   Flint Install Script
+  BackGrnd  1
+  Font      6
+  Colour    255 255 255
+  SFillCol    0   0  75
+  EFillCol    0   0 255
+
+DiagStart Init
+  Title     Welcome
+  Message   
+  Message   
+  Message   Welcome to Flint Installation
+  Banner    "wave.bmp"
+
+DiagStart Direct
+  Title     Choose Directory
+  Message   
+  Message   
+  Message   Please choose the directory
+  Message   you wish to install Flint into:
+  Banner    "wave.bmp"
+
+DiagStart Finish
+  Title     Finished Installation
+  Message   
+  Message   
+  Message   Flint installation
+  Message   has successfully
+  Message   been installed.
+  Banner    "wave.bmp"
+
+DiagStart System
+  Title     Configure System
+  Message   
+  Message   Your system needs to configure the
+  Message   following items. If you do not wish
+  Message   items configured, please
+  Message   deselect them below :
+
+FileStart
+  Variable   path=%path%;<defdir>
+  Program    flint | <defdir>\flint2D.exe | flint2d |
+  Copy       "flint.htm"
+  Copy       "salflibc.dll"
+  Copy       "salflibc.lib"
+  Copy       "flint2D.exe"
+  Copy       "test1.cas"
+  Copy       "test1.dat"
+  Mkdir      "help"
+  Chdir      "help"
+  Copy       "flgdefi.htm"
+  Copy       "flint.htm"
+  Copy       "flint12.htm"
+  Copy       "flint122.htm"
+  Copy       "flint124.htm"
+  Copy       "flint16.htm"
+  Copy       "flint22.htm"
+  Copy       "flint221.htm"
+  Copy       "flint24.htm"
+  Copy       "flint241.htm"
+  Copy       "flint242.htm"
+  Copy       "flint243.htm"
+  Copy       "flint25.htm"
+  Copy       "flint26.htm"
+  Copy       "flint27.htm"
+  Copy       "flint28.htm"
+  Copy       "flint32.htm"
+  Copy       "flint320.htm"
+  Copy       "flint321.htm"
+  Copy       "flint322.htm"
+  Copy       "flint323.htm"
+  Copy       "flint325.htm"
+  Copy       "flint326.htm"
+  Copy       "flint327.htm"
+  Copy       "flint34.htm"
+  Copy       "flint41.htm"
+  Copy       "flint411.htm"
+  Copy       "flint412.htm"
+  Copy       "flint42.htm"
+  Copy       "flint51.htm"
+  Copy       "flint52.htm"
+  Copy       "flint61.htm"
+  Copy       "flint612.htm"
+  Copy       "flint613.htm"
+  Copy       "flint614.htm"
+  Copy       "flint615.htm"
+  Copy       "flint616.htm"
+  Copy       "flint617.htm"
+  Copy       "flint618.htm"
+  Copy       "flint619.htm"
+  Copy       "flint71.htm"
+  Copy       "tail.html"
+  Copy       "MENU3.GIF"
+  Copy       "MENU6.GIF"
+#

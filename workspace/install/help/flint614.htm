@@ -1,0 +1,149 @@
+<HTML>
+<HEAD>
+<TITLE> UNDERRELAX </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> UNDER-RELAXATION FACTORS </H3> </CENTER>
+<P>
+Given the complex, non-linear and inter-dependent nature of the field
+equations the best that can be achieved is to linearise the field equations
+for each of the field variables at each grid location by assuming that the
+other variables remain constant and independent of that variable.
+<BR>
+  For each of the field variables, this will yield a set of <I><B> n </B> </I> linear equations that can be
+tackled numerically, where <I><B> n </B> </I> is the number of discreet grid
+locations.
+<P>
+During each iteration, Flint solves these sets of linearised field equations
+by iterative means.
+ Although they can be solved by direct methods,
+this is computationally more costly and also unnecessary. More costly, because
+the direct solution of these sets of equations will involve the inversion of a
+sparce, but not necessarily banded,very large coefficients matrix. Unnecessary,
+because, these equations represent only a locally linearised problem,
+where the term 'locally' is used to imply the fact that the current values of the
+other field variables are assumed to remain unchanging during the solution. This is
+so that the coefficients of the linear equations can be numerically calculated.
+Therefore it is pointless to aim for an accurate solution of these
+equations while the accuracy is already compromised by assuming that the other
+field variables remain static.
+<P>
+
+Let us define <B> &Oslash;</B> to be a field variable. <BR>
+Having decided on an iterative approach such as the Gauss-Seidel method, the
+solution progresses by calculating the new values of <B> &Oslash;</B> from
+the current values of all the field variables as; <P>
+
+<B> &Oslash;(calculated) = function(all field variables including &Oslash;(previous)&nbsp;)</B><BR>
+<B> &Oslash;(new) = &Oslash;(calculated)</B><P>
+
+ We therefore replace the previous values of <B> &Oslash;</B> with the newly
+ calculated values of <B>&Oslash </B> and repeat the process.<BR>
+ This is normally performed by cycling through all
+ the field variables during each iteration and the process continues until
+ the differences between &Oslash;(new) and &Oslash;(previous) fall below acceptable
+ limits.
+ <P>
+ In practice, the above formulea does not yield the fastest possible convergence
+ and in some cases it may even cause divergence.<BR>
+ A better formulation will be as follow;
+ <P>
+<B> &Oslash;(calculated) = function(all field variables including &Oslash;(previous)&nbsp;)</B><BR>
+<B> &Oslash;(new)  = &Oslash;(previous)&nbsp;+&nbsp;alpha*(&Oslash;(calculated)
+                  - &Oslash;(previous)&nbsp;)</B>
+
+<P>
+
+ Where <B>alpha</B> is known as the underrelaxation,overrelaxation or
+ accelaration factor.<BR>
+  When  <B>alpha=1.0</B> the equation reduces to the previous form, where
+  &Oslash;(new) is equal to &Oslash;(calculated) <BR>
+  When  <B>alpha=0.0</B>  &Oslash;(new) remains the same as  &Oslash;(previous),
+  which is of course pointless as the solution never progress.<BR>
+  When <B> alpha </B> is between 0.0 and 1.0  &Oslash;(new) takes a value
+  between  &Oslash;(calculated) and  &Oslash;(previous). This is the case of
+  underrelaxation which represents a damping effect being applied.<BR>
+  When  <B> alpha </B> is greater than 1.0 the effect is that of acceleration
+  or overrelaxation as the new values of the field variables are projected
+  beyond the calculated values.
+
+ <BR>
+   <BR>
+
+ In iterative systems pertaining to CFD studies it is usually the case that
+ values of alpha slightly less than 1.0 yield optimal convergence by damping
+ down the solution to avoid diverging oscilations. There is however no hard
+ and fast rules for an optimal value of alpha. By default Flint uses different
+ underrelaxation factors for different field variables, reflecting the
+ nature of the equations. These default values are usually, but not always, good
+ enough to achieve a steadily converging solution. <BR>
+  This menu option will allow the user to experiment with the underrelaxation
+  values to achieve or improve convergence.
+  <P>
+The only general rule wich can be stated regarding the underrelaxation factors
+is that, at the early stages of iterations lower values of the underrelaxation
+factors will help avoid divergence but as the iterations get closer to the
+converged state, increasing the underrelaxation factors can help speed up the
+progress.
+ <P>
+  The following table gives the default values of the underrelaxation values
+  for each of the field variables; <BR><BR>
+
+  <center>
+
+  <table BORDER="1" CELLSPACING="1" CELLPADDING="7" WIDTH="206">
+    <tr>
+    <td WIDTH="81%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="CENTER"><font SIZE="2">U-velocity</font></td>
+
+    <td WIDTH="19%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="JUSTIFY"> 0.7 </td>
+    </tr>
+    <tr>
+      <td WIDTH="81%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="CENTER"><font SIZE="2">V-velocity</font></td>
+
+    <td WIDTH="19%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="JUSTIFY"> 0.7 </td>
+ </tr>
+    <tr>
+      <td WIDTH="81%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="CENTER"><font SIZE="2">W-velocity</font></td>
+
+    <td WIDTH="19%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="JUSTIFY"> 0.7 </td>
+ </tr>
+ <tr>
+       <td WIDTH="81%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="CENTER"><font SIZE="2">Pressure</font></td>
+
+     <td WIDTH="19%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="JUSTIFY"> 0.3 </td>
+ </tr>
+ <tr>
+      <td WIDTH="81%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="CENTER"><font SIZE="2">Turbulence K.E.</font></td>
+
+    <td WIDTH="19%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="JUSTIFY"> 0.2 </td>
+ </tr>
+ <tr>
+      <td WIDTH="81%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="CENTER"><font SIZE="2">Eddy Dissipation</font></td>
+
+    <td WIDTH="19%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="JUSTIFY"> 0.2 </td>
+ </tr>
+ <tr>
+      <td WIDTH="81%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="CENTER"><font SIZE="2">Viscosity</font></td>
+
+    <td WIDTH="19%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="JUSTIFY"> 0.2 </td>
+  </tr>
+  <tr>
+      <td WIDTH="81%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="CENTER"><font SIZE="2">Enthalpy</font></td>
+
+    <td WIDTH="19%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="JUSTIFY"> 0.2 </td>
+  </tr>
+  <tr>
+        <td WIDTH="81%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="CENTER"><font SIZE="2">Temperature</font></td>
+
+      <td WIDTH="19%" VALIGN="MIDDLE" HEIGHT="33"><p ALIGN="JUSTIFY"> 0.3 </td>
+  </tr>
+  </table>
+
+    </center>
+</BODY>
+
+</HTML>

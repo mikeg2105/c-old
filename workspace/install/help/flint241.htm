@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<TITLE> DEFINE GEOMETRY: CREATE REGIONS  </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> DEFINE-GEOMETRY:CREATE REGIONS  </H3> </CENTER>
+<P>
+
+
+  Whilst in CREATE-REGIONS mode, clicking the mouse within the main graphics
+  area latches onto the nearest <B> eligible </B> <A HREF="flgdefi.htm#CORNER" >corner </A>
+  that can be used for creating the
+  first <A HREF="flgdefi.htm#EDGE" >edge </A> of a new region. As a corner can be shared by at most
+  four regions, only the corners with less than four connected edges are
+  <B> eligible </B> at this stage. The other "free" end point of the edge is latched
+  onto the mouse,  allowing it to be placed at a suitable location by clicking
+  the mouse button again. At this stage, precise positioning can be
+  achieved by clicking the right mouse button instead of the left button.
+  <P>
+  Once the first edge is defined in this fashion,  user is either invited
+  to select the first "existing" end-point of the second edge '<I> providing there
+  are more than one eligible points for creating the new region</I>' or the
+  mouse is automatically latched onto the only eligible corner,
+   allowing user to define the
+  second edge. Once the two new edges are defined + the already existing
+  edge, the new region becomes fully defined. and the process can be repeated
+  if necessary to define new regions.
+ <P>
+  At this stage of creating new regions
+  there is no need to locate the corners precisely as this can easily be done
+  later by means of the <A HREF="flint243.htm"> MOVE POINT </A> actions. Note also that Flint does not
+  allow the creation of extremely distorted, badly concave or geometrically
+  invalid regions by performing a series of tests on the new region.
+  However, such tests are not performed during MOVE-POINT actions,
+  thus allowing users to distort regions  at the risk of creating invalid,
+  hence un-gridable, regions.The relaxation of the rules are allowed here
+  because of the fact that it will be easy  to
+  visualise the validity of an existing  region whilst moving one of
+  its corners.
+  <P>
+  When a new region is created, Flint also checks if the formation of the
+  new region have resulted in the complete definition of any of the
+  neighbouring regions. If that is the case those regions are also
+  automatically created.
+
+
+
+
+</BODY>
+
+</HTML>

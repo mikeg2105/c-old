@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<TITLE> MANIPULATE-GRID  </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> MANIPULATE-GRID  </H3> </CENTER>
+<P>
+
+ Having defined the grid-control-points by means of the Define-Grid and
+ optionally Refine-Grid commands, Flint goes ahead and automatically generates
+ all the internal grid points by using interpolation techniques.
+
+ <P>
+ There is normally no need to adjust these internal grid points, but
+ if the user wishes to do so, Manipulate-Grid command allows users
+ to re-position each individual internal grid point.<BR>
+ One use of this feature is to define internal geometrical features
+ which had not been defined during the Define-Geometry and
+ Refine-Geometry phase.
+ During the Manipulate-Grid phase, all the Guide-Curves which had been created
+ during Refine-Geometry are shown. Although it is not possible to lock
+ internal-grid-points onto guide-curves, never-the-less these curves can be
+ used as simple visual guides while re-positioning grid points.<BR>
+ For example, to create a circular object within the interior of a region,
+ one can define a guide-circle of required dimensions and position
+ while in Refine-Geometry and use this circle as a visual guide while
+ adjusting the internal grid points.
+
+<P>
+
+  Only one new icon named <B> ADJUST </B> is introduced to assist with
+  the Manipulate-Grid task. This icon allows the user to define how
+  moving one internal grid point will effect its neighbours.
+  By default, ADJUST OFF is in effect and moving an internal grid point
+  has no effect on its neighbours. It is therefore important that illegal
+  grids are not created by moving the grid points excessively such that
+  the grid lines start crossing each other.<BR>
+
+<P>
+  As usual,  moving a grid-point is done by clicking the mouse on or near
+  it moving it to a new position and clicking the mouse button again.
+  As usual, right-hand button allows for precise positioning of the grid point.
+  ESC key can be used to cancel the current action. Attempts to move a
+  grid-point outside the main graphics area will also act as a cancel request.
+
+
+<P>
+  By clicking on the <B>adjust </B> icon user can select how moving one
+  grid point may effect its neighbours. When the adjust icon is displaying
+  OFF, changing the position of one grid point will have no effect on the
+  positions of its immediate neighbours. At the other extreme, when the
+  adjust AUTO is selected moving a grid point in one particular direction
+  will stretch the entire grid towards that direction while keeping all
+  WALL-type cells and domain boundary cells firmly anchored.
+  <BR>
+  The inability to manipulate the positions of the WALL-TYPE cells can be
+  put to good use by setting all cells that should be left intact during
+  Manipulate-Grid to WALL type by means of the <A HREF="flint34.htm">
+  SET-CELLS </A> command.
+  <BR> Between the two extremes of ADJUST OFF and ADJUST AUTO lies the
+  ADJUST LIMITED state, whereby user defines at most how many layers of
+  neighbouring cells will be effected by a move.
+
+ <P>
+
+
+
+
+
+</BODY>
+
+</HTML>

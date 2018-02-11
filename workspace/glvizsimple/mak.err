@@ -1,0 +1,10 @@
+gcc -I/usr/include -I/usr/X11R6/include -c glvizsimple.c
+glvizsimple.c: In function `main':
+glvizsimple.c:98: `glwMDrawingAreaWidgetClass' undeclared (first use in this function)
+glvizsimple.c:98: (Each undeclared identifier is reported only once
+glvizsimple.c:98: for each function it appears in.)
+glvizsimple.c:98: `GLwNvisualInfo' undeclared (first use in this function)
+glvizsimple.c:102: warning: assignment makes pointer from integer without a cast
+glvizsimple.c:114: warning: passing arg 3 of `XtAddCallback' from incompatible pointer type
+glvizsimple.c:124: warning: passing arg 3 of `XtAddCallback' from incompatible pointer type
+make: *** [glvizsimple.o] Error 1

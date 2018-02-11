@@ -1,0 +1,62 @@
+g++ -ggdb -g -g -Wall -Wno-deprecated -c mmat3d.cpp
+mmat3d.cpp: In constructor `mmat3d::mmat3d(int, int, int, int, int, char*)':
+mmat3d.cpp:159: syntax error before `*' token
+mmat3d.cpp:160: `k' undeclared (first use this function)
+mmat3d.cpp:160: (Each undeclared identifier is reported only once for each 
+   function it appears in.)
+mmat3d.cpp:163: syntax error before `*' token
+mmat3d.cpp:150: warning: unused variable `time_t t'
+mmat3d.cpp:152: warning: unused variable `int lc'
+mmat3d.cpp: In copy constructor `mmat3d::mmat3d(mmat3d&)':
+mmat3d.cpp:206: invalid conversion from `float*****' to `int'
+mmat3d.cpp: In member function `mmat3d& mmat3d::operator+(const mmat3d&)':
+mmat3d.cpp:343: `md' undeclared (first use this function)
+mmat3d.cpp:343: warning: reference to local variable `msum' returned
+mmat3d.cpp: In member function `mmat3d& mmat3d::operator*(float)':
+mmat3d.cpp:359: no matching function for call to `mmat3d::mmat3d(int&, int&, 
+   const float&, int&, int&)'
+mmat3d.cpp:198: candidates are: mmat3d::mmat3d(mmat3d&)
+mmat3d.cpp:149:                 mmat3d::mmat3d(int, int, int, int, int, char*)
+mmat3d.cpp:114:                 mmat3d::mmat3d(int, int, int, int, int, float, 
+   float)
+mmat3d.cpp:363: warning: left-hand operand of comma expression has no effect
+mmat3d.cpp:363: syntax error before `)' token
+mmat3d.cpp:364: syntax error before `;' token
+mmat3d.cpp:359: warning: reference to local variable `mprod' returned
+mmat3d.cpp: In member function `mmat3d& mmat3d::operator+=(float)':
+mmat3d.cpp:377: warning: left-hand operand of comma expression has no effect
+mmat3d.cpp:377: syntax error before `)' token
+mmat3d.cpp:378: syntax error before `;' token
+mmat3d.cpp: In member function `int mmat3d::save(FILE*)':
+mmat3d.cpp:472: warning: left-hand operand of comma expression has no effect
+mmat3d.cpp:472: syntax error before `)' token
+mmat3d.cpp:473: syntax error before `;' token
+mmat3d.cpp: In member function `int mmat3d::load(FILE*)':
+mmat3d.cpp:488: warning: left-hand operand of comma expression has no effect
+mmat3d.cpp:488: syntax error before `)' token
+mmat3d.cpp:489: syntax error before `;' token
+mmat3d.cpp: In member function `mmat3d& mmat3d::operator+=(const mmat3d&)':
+mmat3d.cpp:500: warning: left-hand operand of comma expression has no effect
+mmat3d.cpp:501: warning: left-hand operand of comma expression has no effect
+mmat3d.cpp:502: warning: left-hand operand of comma expression has no effect
+mmat3d.cpp:502: warning: left-hand operand of comma expression has no effect
+mmat3d.cpp:503: warning: left-hand operand of comma expression has no effect
+mmat3d.cpp:503: syntax error before `)' token
+mmat3d.cpp:504: syntax error before `;' token
+mmat3d.cpp: In member function `mmat3d& mmat3d::operator*=(float)':
+mmat3d.cpp:517: warning: left-hand operand of comma expression has no effect
+mmat3d.cpp:517: syntax error before `)' token
+mmat3d.cpp:518: syntax error before `;' token
+mmat3d.cpp: In function `std::ostream& operator<<(std::ostream&, mmat3d&)':
+mmat3d.cpp:563: `mr' undeclared (first use this function)
+mmat3d.cpp:563: syntax error before `)' token
+mmat3d.cpp:565: `mc' undeclared (first use this function)
+mmat3d.cpp:565: syntax error before `;' token
+mmat3d.cpp: At global scope:
+mmat3d.cpp:579: syntax error before `return'
+mmat3d.cpp: In function `std::istream& operator>>(std::istream&, mmat3d&)':
+mmat3d.cpp:599: syntax error before `)' token
+mmat3d.cpp:601: syntax error before `;' token
+mmat3d.cpp: At global scope:
+mmat3d.cpp:610: syntax error before `return'
+make: *** [mmat3d.o] Error 1

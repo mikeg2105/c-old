@@ -1,0 +1,14 @@
+#make include file for building IoUtils on felix
+
+CC = g++
+COPTFLAGS = -O 
+CLINKER = ${CC}
+FLAGS = -ggdb -g
+LIBS = -lm
+LINKFLAGS = -g -Wall -Wno-deprecated
+#VPATH = src:../include
+
+OPTFLAGS= $(COPTFLAGS)
+
+
+

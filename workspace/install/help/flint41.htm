@@ -1,0 +1,142 @@
+<HTML>
+<HEAD>
+<TITLE> FLINT/2D SOLVING THE PROBLEM </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+<P>
+
+<CENTER> <H3> SOLVING THE PROBLEM</H3> </CENTER>
+<P>
+
+Having defined the geometry, grid and the boundary
+conditions, starting up the iterative procedure for
+the solution of the flow field which meets the given boundary
+conditions is achieved by means of the <B> Solve </B> main menu
+option.
+<P>
+The governing equations are almost invariably non-linear and inter-dependent
+to each other. As such systems of equations present no directly attainable
+analytical solution an iterative solution approach will have to be adopted.
+Computationally, this involves <A HREF="flint412.htm"> linearising all the
+governing equations at each cell location </A> and simultaneously solving them to calculate the
+values of the field variables. Using the scheme outlined below, these
+recently calculated field values are then re-used while re-linearising the
+equations and the process is repeated until strong signs of convergence are
+detected.
+<P>
+
+<B> Solve </B> command requires only one input, that is the number of
+iterations to perform.<BR>
+There is no need to carry out large numbers of iterations from the onset.
+It is advisable that, to start with, only a few iterations are
+performed to make sure that the solutions are progressing satisfactorily.
+Flint will always remember the field values calculated so far. Therefore
+iterations can be continued later on during that session.<BR> Alternatively
+the <B> File->Save-Data </B> command can be used to save the field values
+calculated so far into a file which can be read back into Flint during
+a later session.
+<P>
+The number of iterations needed to achieve complete convergence depends
+on how well-defined the problem is as well as the geometry, the number of
+computational cells and the number of equations being solved,
+which reflects the physical complexity of the problem.
+
+
+<P>
+<B> SCHEME OF SOLUTION </B>
+<P>
+
+Iterations involve the following steps:
+
+<OL>
+<LI> Velocity components <B> u,v,w </B> and fluid momentum equations are solved using the guessed
+      values of the pressure field  <B> p </B> </LI>
+<LI> Using the newly calculated <B> u,v,w </B> the mass balance equation is solved
+     to obtain the new values of the pressure field <B> p </B> </LI>
+<LI> For turbulent flows turbulence equations are solved using the other flow variables</LI>
+<LI> Depending on the type of problem being tackled, other field equations
+      are solved , e.g. enthalpy, radiation etc.</LI>
+<LI> Fluid properties e.g. density, viscosity
+     (they may depend on the temperatures) are recalculated </LI>
+<LI> Residuals are calculated and  checked against the convergence limits </LI>
+<LI> If the convergence limits have not been met, the process is repeated
+     from step (1) for another iteration.
+</OL>
+
+
+<P>
+The total number of iterations needed to achieve a satisfactory
+solution of a particular problem can never be predicted with
+any great accuracy. This number is usually linearly related to the
+total number of live cells in the domain, The physical and geometrical
+complexities of the domain has a major influence in the numbers of
+iterations needed. These compexities can even cause divergence during
+the particularly early stages of the solution. Badly defined or unrealistic
+boundary conditions is another reasons for divergence.
+Finally, what makes a satisfactory solution 'satisfactory', i.e. the
+convergence limits, will obviously effect the number of iterations needed.
+<P>
+Once the solution starts, user can monitor the progress of the iterative
+solution by observing the relative-residuals report which produces one
+line of output per iteration, indicating the normalised residuals of
+all the variables in the solution. For simple flows involving no
+heat transfer and turbulence U,V (and W if required) velocities
+and the Pressure (P)are used for the reporting of the residual values.
+For turbulent flows the kinetic energy of turbulence
+(E) and the dissipation rate (D) are also included in the report.
+For flows involving heat transfer there will also be an entry indicating
+the Enthalpy values (H).
+<P>
+ Apart from during the first iteration, all reported values are
+ normalised. For example a reported residual value of 1.0E-2 for
+ v-velocity indicates that the change of  values from previous
+ iteration to this one has been about 1.0 percent of the actual v-values.
+ values.
+
+ <P> This brings into focus the definition of a satisfactory solution
+ in terms of the residuals. The question of when to terminate
+ a steadily converging iterative process and declare the results
+ satisfactory is not always easily answerable.<BR>
+ The pit-falls of very slow convergence due to the nature of the
+ problem or due to the factors effecting the iteration process or
+ even convergence to a false solution due mainly to the initial conditions
+ can occur. Refer to <A HREF="flint411.htm">the section on tips for
+ a satisfactory solution</A> for more information.
+
+ <P>
+ Flint normally performs all the number of iterations requested by
+ the user before accepting any further instructions. However, if a
+ satisfactory convergence is detected the calculations will be
+ halted automatically without having to carry out the requested
+ numbers of iterations.<BR>
+ We recommend that, initialy, only a few iterations are carried out
+ and the residual reports are observed to see if the iterations are
+ progressing satisfactorily and there is no appearent divergence
+ taking place. Depending on the nature of the problem, oscilations
+ of the reported residual values, particularly during the early
+ stages, may be observed. These should however die out as the
+ iterations progress and the reported residuals show steadily
+ decreasing values.
+ <P>
+ <A HREF="flint411.htm"> Remedial actions </a>will be needed in cases
+ of detection of unsatisfactory convergence or un-damped oscilations
+ of the residual values.
+
+ <P>
+ The default conditions for such an automatically halting of the
+ calculations and declaring convergence is the point
+ when the total sum of the reported residuals of all the reported
+ variables dips below 1.0E-3.
+ This convergence criteria along with other factors effecting
+ the solution can be changed via the EXPERT->SOLUTION-PARAMETERS
+ option.
+
+
+
+
+</BODY>
+
+</HTML>

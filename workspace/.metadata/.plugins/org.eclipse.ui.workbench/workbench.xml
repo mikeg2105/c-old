@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="17" version="2.0">
+<workbenchAdvisor/>
+<window height="566" width="800" x="0" y="0">
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="org.eclipse.ui.views.PropertySheet"/>
+</fastViewData>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="128" y="26"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="112" y="26"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="26"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="172" y="26"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.make.editor" itemType="typeToolBarContribution" x="36" y="26"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page focus="true" label="Workspace - C/C++">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.cdt.make.editor" name="Makefile" partName="Makefile" path="/home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/Makefile" title="Makefile" tooltip="allreduce_mpi/Makefile" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/allreduce_mpi/Makefile"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="make_iceberg" partName="make_iceberg" path="/home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/make_iceberg" title="make_iceberg" tooltip="allreduce_mpi/make_iceberg" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/allreduce_mpi/make_iceberg"/>
+</editor>
+<editor id="org.eclipse.cdt.make.editor" name="Makefile" partName="Makefile" path="/home1/cs/cs1mkg/proj/cppdev/workspace/acmltest/Makefile" title="Makefile" tooltip="acmltest/Makefile" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/acmltest/Makefile"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="make_iceberg" partName="make_iceberg" path="/home1/cs/cs1mkg/proj/cppdev/workspace/acmltest/make_iceberg" title="make_iceberg" tooltip="acmltest/make_iceberg" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/acmltest/make_iceberg"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="acml.ti" partName="acml.ti" path="/home1/cs/cs1mkg/proj/cppdev/workspace/acmltest/acml.ti" title="acml.ti" tooltip="acmltest/acml.ti" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/acmltest/acml.ti"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="acml.cpp" partName="acml.cpp" path="/home1/cs/cs1mkg/proj/cppdev/workspace/acmltest/src/acml.cpp" title="acml.cpp" tooltip="acmltest/src/acml.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/acmltest/src/acml.cpp"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="linpackc.c" partName="linpackc.c" path="/home1/cs/cs1mkg/proj/cppdev/workspace/linpackc/linpackc.c" title="linpackc.c" tooltip="linpackc/linpackc.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/linpackc/linpackc.c"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="avg.c" partName="avg.c" path="/home1/cs/cs1mkg/proj/cppdev/workspace/avg/src/avg.c" title="avg.c" tooltip="avg/src/avg.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/avg/src/avg.c"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="allreduce.c" partName="allreduce.c" path="/home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/allreduce.c" title="allreduce.c" tooltip="allreduce_mpi/allreduce.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/allreduce_mpi/allreduce.c"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState columnWidth0="19" columnWidth1="19" columnWidth2="200" columnWidth3="75" columnWidth4="150" columnWidth5="93" horizontalPosition="0" verticalPosition="0">
+<selection/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Targets">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.ui.CView" partName="C/C++ Projects">
+<viewState horizontalPosition="0" showLibraries="true" verticalPosition="726">
+<expanded>
+<element path="/home1/cs/cs1mkg/proj/c++dev/workspace/avg"/>
+<element path="/home1/cs/cs1mkg/proj/c++dev/workspace/avg/src"/>
+<element path="/home1/cs/cs1mkg/proj/c++dev/workspace/cscalapack"/>
+<element path="/home1/cs/cs1mkg/proj/c++dev/workspace/ising"/>
+<element path="/home1/cs/cs1mkg/proj/c++dev/workspace/ising/include"/>
+<element path="/home1/cs/cs1mkg/proj/c++dev/workspace/ising_mpi"/>
+<element path="/home1/cs/cs1mkg/proj/c++dev/workspace/ising_mpi/src"/>
+<element path="/home1/cs/cs1mkg/proj/c++dev/workspace/linpackc"/>
+</expanded>
+<selection>
+<element path="/home1/cs/cs1mkg/proj/c++dev/workspace/cscalapack/cscalapack.c"/>
+</selection>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
+<viewState hidefields="false" hidenonpublic="false" hidestatic="false" layout="2" org.eclipse.jdt.ui.packages.linktoeditor="0" workingSetName="">
+<selection>
+<element path="=javatest"/>
+</selection>
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_*$*.class" isEnabled="true"/>
+<child filterId="org.eclipse.pde.ui.BinaryProjectFilter1" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
+<view id="org.eclipse.ui.views.ResourceNavigator" partName="Navigator">
+<viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
+<filters>
+<filter element=".*" isEnabled="false"/>
+<filter element="*.class" isEnabled="false"/>
+</filters>
+<expanded>
+<element path="/allreduce_mpi"/>
+</expanded>
+<selection>
+<element path="/allreduce_mpi/allreduce.c"/>
+</selection>
+</viewState>
+</view>
+</views>
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspective editorAreaVisible="1" version="0.016">
+<descriptor class="org.eclipse.ui.internal.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
+<actionSet id="org.eclipse.help.internal.ui.HelpActionSet"/>
+<actionSet id="org.eclipse.search.searchActionSet"/>
+<actionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<actionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<actionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<actionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.help.internal.ui.HelpActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkNavigator"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.externaltools.AntView"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="org.eclipse.cdt.ui.CPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.team.cvs.ui.cvsPerspective"/>
+<view id="org.eclipse.ui.views.ResourceNavigator"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.views.ResourceNavigator">
+<page content="org.eclipse.ui.views.ResourceNavigator" label="Navigator"/>
+<page content="org.eclipse.ui.views.BookmarkNavigator" label="Bookmarks"/>
+<page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="CVS Repositories"/>
+<page content="org.eclipse.team.ui.target.SiteExplorerView" label="Site Explorer"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.26" relationship="2" relative="topLeft"/>
+<info folder="true" part="org.eclipse.ui.internal.PartTabFolder@1c7789b5" ratio="0.66" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.TaskList">
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.team.ccvs.ui.console" label="CVS Console"/>
+<page content="org.eclipse.team.ccvs.ui.HistoryView" label="CVS Resource History"/>
+<page content="org.eclipse.team.ui.sync.SyncView" label="Synchronize"/>
+</folder>
+</info>
+<info folder="true" part="bottomLeft" ratio="0.5" relationship="4" relative="topLeft">
+<folder activePageID="org.eclipse.ui.views.ContentOutline">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ui.externaltools.AntView" label="Ant"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+<toolbarLayout actionSet="1">
+<itemSize x="126" y="26"/>
+<itemSize x="48" y="26"/>
+<itemSize x="40" y="26"/>
+<itemSize x="108" y="26"/>
+<wrapIndex index="0"/>
+<item id="org.eclipse.ui.workbench.file"/>
+<item id="org.eclipse.debug.ui.launchActionSet"/>
+<item id="org.eclipse.search.searchActionSet"/>
+<item id="org.eclipse.ui.workbench.navigate"/>
+</toolbarLayout>
+</perspective>
+<perspective editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.SearchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.make.ui.makeTargetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.openExternalFile"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CodingActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.ConsoleView"/>
+<show_view_action id="org.eclipse.cdt.ui.BuildConsoleView"/>
+<show_view_action id="org.eclipse.cdt.ui.CView"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.search.SearchResultView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<perspective_action id="org.eclipse.cdt.ui.CPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<view id="org.eclipse.cdt.ui.CView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.ResourceNavigator"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<fastViews>
+<view id="org.eclipse.ui.views.PropertySheet" ratio="0.20833333"/>
+</fastViews>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.views.ResourceNavigator" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.BookmarkNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.ui.CView" label="C/C++ Projects"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="Navigator"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Targets"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2733078" ratioLeft="214" ratioRight="569" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.7817372" ratioLeft="351" ratioRight="98" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.cdt.ui.BuildConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="1"/>
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaVisible="1" version="0.016">
+<descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
+<actionSet id="org.eclipse.help.internal.ui.HelpActionSet"/>
+<actionSet id="org.eclipse.search.searchActionSet"/>
+<actionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<actionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<actionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<actionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<actionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<actionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<actionSet id="org.eclipse.ui.NavigateActionSet"/>
+<actionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<actionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
+<alwaysOnActionSet id="org.eclipse.help.internal.ui.HelpActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<show_view_action id="org.eclipse.search.SearchResultView"/>
+<show_view_action id="org.eclipse.debug.ui.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.externaltools.AntView"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSnippetFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="Hierarchy"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="Navigator"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.75" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.TaskList">
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.search.SearchResultView" label="Search"/>
+<page content="org.eclipse.debug.ui.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.BookmarkNavigator" label="Bookmarks"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.PartTabFolder@1f92eaa5" ratio="0.75" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ui.externaltools.AntView" label="Ant"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+<toolbarLayout actionSet="1">
+<itemSize x="126" y="26"/>
+<itemSize x="116" y="26"/>
+<itemSize x="126" y="26"/>
+<itemSize x="66" y="26"/>
+<itemSize x="108" y="26"/>
+<wrapIndex index="0"/>
+<item id="org.eclipse.ui.workbench.file"/>
+<item id="org.eclipse.debug.ui.launchActionSet"/>
+<item id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<item id="org.eclipse.search.searchActionSet"/>
+<item id="org.eclipse.ui.workbench.navigate"/>
+</toolbarLayout>
+</perspective>
+</perspectives>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/allreduce_mpi/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/allreduce_mpi/allreducejob.sh"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/allreduce_mpi/jobs/mpi_ngsc1.rsl"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/allreduce_mpi/jobs/mpi_max.rsl"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/allreduce_mpi/jobs/mpi_sno.rsl"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ising/src/ising_system.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ising/src/ising.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/linpackc/linpackc.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ising/src/ising_system.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/md_omp/forces_p.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/md_omp/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/md_omp/Makefile_p"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/ising/src/ising_system.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/deadlock_mpi/deadlock2.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/fish/fisheries.f90"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/fish/make_iceberg"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/fish/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/fish/make_tigger"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/fish/sum1.f"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/allreduce_mpi/allreduce.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/fish/fisheries.f90"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/fish/sum1.f"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/fish/make_tigger"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/fish/make_iceberg"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/fish/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/allreduce_mpi/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/allreduce_mpi/make_iceberg"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" path="/acmltest/Makefile"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/acmltest/make_iceberg"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/acmltest/acml.ti"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/acmltest/src/acml.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/linpackc/linpackc.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/avg/src/avg.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/allreduce_mpi/allreduce.c"/>
+</editors>
+<item historyLabel="Makefile" index="0">
+<position/>
+</item>
+<item historyLabel="allreducejob.sh" index="1">
+<position/>
+</item>
+<item historyLabel="mpi_ngsc1.rsl" index="2">
+<position/>
+</item>
+<item historyLabel="mpi_max.rsl" index="3">
+<position/>
+</item>
+<item historyLabel="mpi_sno.rsl" index="4">
+<position/>
+</item>
+<item historyLabel="ising_system.cpp" index="5">
+<position/>
+</item>
+<item historyLabel="ising.cpp" index="6">
+<position/>
+</item>
+<item historyLabel="ising_system.cpp" index="5">
+<position/>
+</item>
+<item historyLabel="ising.cpp" index="6">
+<position info="not_deleted" x="871" y="13"/>
+</item>
+<item historyLabel="ising_system.cpp" index="5">
+<position info="not_deleted" x="372" y="22"/>
+</item>
+<item historyLabel="ising.cpp" index="6">
+<position info="not_deleted" x="871" y="13"/>
+</item>
+<item historyLabel="ising_system.cpp" index="5">
+<position info="not_deleted" x="490" y="22"/>
+</item>
+<item historyLabel="ising.cpp" index="6">
+<position info="not_deleted" x="871" y="13"/>
+</item>
+<item historyLabel="linpackc.c" index="7">
+<position/>
+</item>
+<item historyLabel="ising_system.cpp" index="8">
+<position/>
+</item>
+<item historyLabel="forces_p.c" index="9">
+<position/>
+</item>
+<item historyLabel="main.c" index="10">
+<position/>
+</item>
+<item historyLabel="forces_p.c" index="9">
+<position/>
+</item>
+<item historyLabel="Makefile_p" index="11">
+<position/>
+</item>
+<item historyLabel="forces_p.c" index="9">
+<position/>
+</item>
+<item historyLabel="ising_system.cpp" index="12">
+<position/>
+</item>
+<item historyLabel="deadlock2.c" index="13">
+<position/>
+</item>
+<item historyLabel="fisheries.f90" index="14">
+<position/>
+</item>
+<item historyLabel="make_iceberg" index="15">
+<position/>
+</item>
+<item historyLabel="Makefile" index="16">
+<position/>
+</item>
+<item historyLabel="make_tigger" index="17">
+<position/>
+</item>
+<item historyLabel="sum1.f" index="18">
+<position/>
+</item>
+<item historyLabel="Makefile" index="16">
+<position/>
+</item>
+<item historyLabel="make_tigger" index="17">
+<position/>
+</item>
+<item historyLabel="Makefile" index="16">
+<position info="not_deleted" x="484" y="0"/>
+</item>
+<item historyLabel="make_tigger" index="17">
+<position/>
+</item>
+<item historyLabel="sum1.f" index="18">
+<position/>
+</item>
+<item historyLabel="allreduce.c" index="19">
+<position/>
+</item>
+<item historyLabel="fisheries.f90" index="20">
+<position/>
+</item>
+<item historyLabel="sum1.f" index="21">
+<position/>
+</item>
+<item historyLabel="fisheries.f90" index="20">
+<position/>
+</item>
+<item historyLabel="make_tigger" index="22">
+<position/>
+</item>
+<item historyLabel="fisheries.f90" index="20">
+<position/>
+</item>
+<item historyLabel="make_iceberg" index="23">
+<position/>
+</item>
+<item historyLabel="Makefile" index="24">
+<position/>
+</item>
+<item historyLabel="Makefile" index="25">
+<position/>
+</item>
+<item historyLabel="make_iceberg" index="26">
+<position/>
+</item>
+<item historyLabel="Makefile" index="25">
+<position/>
+</item>
+<item historyLabel="Makefile" index="27">
+<position/>
+</item>
+<item historyLabel="make_iceberg" index="28">
+<position/>
+</item>
+<item historyLabel="acml.ti" index="29">
+<position/>
+</item>
+<item historyLabel="acml.cpp" index="30">
+<position/>
+</item>
+<item historyLabel="linpackc.c" index="31">
+<position/>
+</item>
+<item historyLabel="avg.c" index="32">
+<position/>
+</item>
+<item active="true" historyLabel="allreduce.c" index="33">
+<position/>
+</item>
+</navigationHistory>
+<stickyState/>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="allreduce.c" tooltip="allreduce_mpi/allreduce.c">
+<persistable path="/allreduce_mpi/allreduce.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="avg.c" tooltip="avg/src/avg.c">
+<persistable path="/avg/src/avg.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="linpackc.c" tooltip="linpackc/linpackc.c">
+<persistable path="/linpackc/linpackc.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="acml.cpp" tooltip="acmltest/src/acml.cpp">
+<persistable path="/acmltest/src/acml.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="acml.ti" tooltip="acmltest/acml.ti">
+<persistable path="/acmltest/acml.ti"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="make_iceberg" tooltip="acmltest/make_iceberg">
+<persistable path="/acmltest/make_iceberg"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="Makefile" tooltip="acmltest/Makefile">
+<persistable path="/acmltest/Makefile"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="make_iceberg" tooltip="allreduce_mpi/make_iceberg">
+<persistable path="/allreduce_mpi/make_iceberg"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="Makefile" tooltip="allreduce_mpi/Makefile">
+<persistable path="/allreduce_mpi/Makefile"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="sum1.f" tooltip="fish/sum1.f">
+<persistable path="/fish/sum1.f"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="make_tigger" tooltip="fish/make_tigger">
+<persistable path="/fish/make_tigger"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="Makefile" tooltip="fish/Makefile">
+<persistable path="/fish/Makefile"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="make_iceberg" tooltip="fish/make_iceberg">
+<persistable path="/fish/make_iceberg"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="fisheries.f90" tooltip="fish/fisheries.f90">
+<persistable path="/fish/fisheries.f90"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="deadlock2.c" tooltip="deadlock_mpi/deadlock2.c">
+<persistable path="/deadlock_mpi/deadlock2.c"/>
+</file>
+</mruList>
+</workbench>

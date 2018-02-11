@@ -1,0 +1,138 @@
+==Score parallel start script==
+128 nodes were logged as being online at 20:00 hours today
+0 nodes are disabled from the Grid Engine queues
+127 nodes are currently in use
+
+Disk quotas for user wrsmg (uid 101649): 
+     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
+ufavserv2:/export/home/ufaserv2_wrga
+                1273288  5242880 10485760           25231       0       0        
+PE hostfile is : /usr/local/sge6.0/default/spool/snowdon/active_jobs/126958.1/pe_hostfile
+The contents of the hostfile are:
+snowdon.leeds.ac.uk 1 master.q@snowdon.leeds.ac.uk UNDEFINED
+comp126.leeds.ac.uk 1 short.q@comp126.leeds.ac.uk UNDEFINED
+the Job ID for this job is: 126958
+The Score hostfile is in /home/ufaserv2_wrga/wrsmg/.score/ndfile.126958
+The contents are comp126.leeds.ac.uk
+==Score parallel start script==
+SCore-D 5.8.2 connected.
+Timing 00: 0.00011 seconds
+Timing 01: 1.8e-05 seconds
+Timing 02: 1.7e-05 seconds
+Timing 03: 1.6e-05 seconds
+Timing 04: 1.5e-05 seconds
+Timing 05: 1.5e-05 seconds
+Timing 06: 1.5e-05 seconds
+Timing 07: 1.5e-05 seconds
+Timing 08: 1.5e-05 seconds
+Timing 09: 1.5e-05 seconds
+==Score parallel stop script==
+==Score parallel stop script==
+==Score parallel start script==
+128 nodes were logged as being online at 21:00 hours today
+0 nodes are disabled from the Grid Engine queues
+117 nodes are currently in use
+
+Disk quotas for user wrsmg (uid 101649): 
+     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
+ufavserv2:/export/home/ufaserv2_wrga
+                1267220  5242880 10485760           25205       0       0        
+PE hostfile is : /usr/local/sge6.0/default/spool/snowdon/active_jobs/126959.1/pe_hostfile
+The contents of the hostfile are:
+snowdon.leeds.ac.uk 1 master.q@snowdon.leeds.ac.uk UNDEFINED
+comp125.leeds.ac.uk 1 short.q@comp125.leeds.ac.uk UNDEFINED
+comp112.leeds.ac.uk 1 short.q@comp112.leeds.ac.uk UNDEFINED
+comp122.leeds.ac.uk 1 short.q@comp122.leeds.ac.uk UNDEFINED
+comp126.leeds.ac.uk 1 short.q@comp126.leeds.ac.uk UNDEFINED
+comp076.leeds.ac.uk 1 long.q@comp076.leeds.ac.uk UNDEFINED
+the Job ID for this job is: 126959
+The Score hostfile is in /home/ufaserv2_wrga/wrsmg/.score/ndfile.126959
+The contents are comp125.leeds.ac.uk comp112.leeds.ac.uk comp122.leeds.ac.uk comp126.leeds.ac.uk comp076.leeds.ac.uk
+==Score parallel start script==
+SCore-D 5.8.2 connected.
+Timing 00: 0.002067 seconds
+Timing 01: 0.002221 seconds
+Timing 02: 0.002191 seconds
+Timing 03: 0.002203 seconds
+Timing 04: 0.002197 seconds
+Timing 05: 0.002188 seconds
+Timing 06: 0.002222 seconds
+Timing 07: 0.002198 seconds
+Timing 08: 0.002189 seconds
+Timing 09: 0.002205 seconds
+==Score parallel stop script==
+==Score parallel stop script==
+==Score parallel start script==
+128 nodes were logged as being online at 21:00 hours today
+0 nodes are disabled from the Grid Engine queues
+117 nodes are currently in use
+
+Disk quotas for user wrsmg (uid 101649): 
+     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
+ufavserv2:/export/home/ufaserv2_wrga
+                1267222  5242880 10485760           25205       0       0        
+PE hostfile is : /usr/local/sge6.0/default/spool/snowdon/active_jobs/126960.1/pe_hostfile
+The contents of the hostfile are:
+snowdon.leeds.ac.uk 1 master.q@snowdon.leeds.ac.uk UNDEFINED
+comp024.leeds.ac.uk 1 long.q@comp024.leeds.ac.uk UNDEFINED
+comp106.leeds.ac.uk 1 long.q@comp106.leeds.ac.uk UNDEFINED
+comp007.leeds.ac.uk 1 long.q@comp007.leeds.ac.uk UNDEFINED
+comp070.leeds.ac.uk 1 long.q@comp070.leeds.ac.uk UNDEFINED
+comp049.leeds.ac.uk 1 long.q@comp049.leeds.ac.uk UNDEFINED
+comp003.leeds.ac.uk 1 long.q@comp003.leeds.ac.uk UNDEFINED
+comp072.leeds.ac.uk 1 long.q@comp072.leeds.ac.uk UNDEFINED
+the Job ID for this job is: 126960
+The Score hostfile is in /home/ufaserv2_wrga/wrsmg/.score/ndfile.126960
+The contents are comp024.leeds.ac.uk comp106.leeds.ac.uk comp007.leeds.ac.uk comp070.leeds.ac.uk comp049.leeds.ac.uk comp003.leeds.ac.uk comp072.leeds.ac.uk
+==Score parallel start script==
+SCore-D 5.8.2 connected.
+Timing 00: 0.001829 seconds
+Timing 01: 0.001605 seconds
+Timing 02: 0.001576 seconds
+Timing 03: 0.001538 seconds
+Timing 04: 0.001496 seconds
+Timing 05: 0.001818 seconds
+Timing 06: 0.00152 seconds
+Timing 07: 0.001515 seconds
+Timing 08: 0.001414 seconds
+Timing 09: 0.001505 seconds
+==Score parallel stop script==
+==Score parallel stop script==
+==Score parallel start script==
+128 nodes were logged as being online at 21:00 hours today
+0 nodes are disabled from the Grid Engine queues
+117 nodes are currently in use
+
+Disk quotas for user wrsmg (uid 101649): 
+     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
+ufavserv2:/export/home/ufaserv2_wrga
+                1267224  5242880 10485760           25205       0       0        
+PE hostfile is : /usr/local/sge6.0/default/spool/snowdon/active_jobs/126961.1/pe_hostfile
+The contents of the hostfile are:
+snowdon.leeds.ac.uk 1 master.q@snowdon.leeds.ac.uk UNDEFINED
+comp027.leeds.ac.uk 1 long.q@comp027.leeds.ac.uk UNDEFINED
+comp029.leeds.ac.uk 1 long.q@comp029.leeds.ac.uk UNDEFINED
+comp105.leeds.ac.uk 1 long.q@comp105.leeds.ac.uk UNDEFINED
+comp097.leeds.ac.uk 1 long.q@comp097.leeds.ac.uk UNDEFINED
+comp092.leeds.ac.uk 1 long.q@comp092.leeds.ac.uk UNDEFINED
+comp094.leeds.ac.uk 1 long.q@comp094.leeds.ac.uk UNDEFINED
+comp084.leeds.ac.uk 1 long.q@comp084.leeds.ac.uk UNDEFINED
+comp100.leeds.ac.uk 1 long.q@comp100.leeds.ac.uk UNDEFINED
+comp010.leeds.ac.uk 1 long.q@comp010.leeds.ac.uk UNDEFINED
+the Job ID for this job is: 126961
+The Score hostfile is in /home/ufaserv2_wrga/wrsmg/.score/ndfile.126961
+The contents are comp027.leeds.ac.uk comp029.leeds.ac.uk comp105.leeds.ac.uk comp097.leeds.ac.uk comp092.leeds.ac.uk comp094.leeds.ac.uk comp084.leeds.ac.uk comp100.leeds.ac.uk comp010.leeds.ac.uk
+==Score parallel start script==
+SCore-D 5.8.2 connected.
+Timing 00: 0.002475 seconds
+Timing 01: 0.003328 seconds
+Timing 02: 0.00238 seconds
+Timing 03: 0.002431 seconds
+Timing 04: 0.002437 seconds
+Timing 05: 0.002376 seconds
+Timing 06: 0.002436 seconds
+Timing 07: 0.00241 seconds
+Timing 08: 0.002547 seconds
+Timing 09: 0.002428 seconds
+==Score parallel stop script==
+==Score parallel stop script==

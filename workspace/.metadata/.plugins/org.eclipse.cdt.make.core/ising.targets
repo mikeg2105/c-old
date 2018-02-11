@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildTargets><target name="ising" path=""
+        targetID="org.eclipse.cdt.make.MakeTargetBuilder"><buildCommand>make</buildCommand><buildArguments></buildArguments><buidlTarget>ising</buidlTarget><stopOnError>false</stopOnError><useDefaultCommand>true</useDefaultCommand></target><target
+        name="clean" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder"><buildCommand>make</buildCommand><buildArguments></buildArguments><buidlTarget>all</buidlTarget><stopOnError>false</stopOnError><useDefaultCommand>true</useDefaultCommand></target></buildTargets>

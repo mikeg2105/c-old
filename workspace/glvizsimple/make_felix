@@ -1,0 +1,10 @@
+#Makefile for glvizsimple model
+CC = gcc
+CPP = g++
+CLINKER = ${CC}
+CPPLINKER = ${CPP}
+FLAGS = 
+LINKFLAGS = -ggdb -Wall -g3
+VPATH = src:../include
+LIB = -L/usr/X11R6/lib -lGL -lGLw -lGLU  -lXm -lXext -lXt -lX11 -lm
+INCLUDE = -I/usr/include

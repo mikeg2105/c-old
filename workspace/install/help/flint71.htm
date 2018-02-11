@@ -1,0 +1,108 @@
+<HTML>
+<HEAD>
+<TITLE> FILE I/O RELATED FEATURES  </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> FILE I/O RELATED FEATURES </H3> </CENTER>
+<P>
+
+All the file input/output related features of Flint are contained
+within the FILE main menu. These are;
+
+
+<UL>
+<LI><A HREF="#RC">  READ-CASE </A>   </LI>
+<LI> <A HREF="#WC"> WRITE-CASE </A>  </LI>
+<LI> <A HREF="#WG"> WRITE-GRID </A>  </LI>
+<LI> <A HREF="#RD"> READ-DATA </A>   </LI>
+<LI> <A HREF="#WD">WRITE-DATA </A>   </LI>
+<LI> <A HREF="#DOS">DOS-SHELL </A>   </LI>
+<LI> <A HREF="#QUIT">QUIT     </A>   </LI>
+</UL>
+
+<HR>
+<A NAME="RC" > </A>
+READ-CASE command reads Geometry, Grid, Cell and Boundary information
+which had been stored into a file by means of the 'WRITE-CASE' command
+during a previous Flint session. These case files are stored
+unformatted in a computer dependent way. Therefore they can not be read or
+manipulated by any other means except 'Flint'.
+<P>
+By default all case files are stored using the <B>.CAS</B> filename extension,
+so that they can be easily identified. File read menu normally displays
+only the filenames with the .CAS extension as well as any subdirectories
+and also the parent directory as <B>..</B>. This will enable the Flint user
+to change directories and search through them by simply clicking on them.<BR>
+As well as all the files matching the search pattern, which is <I> *.CAS </I>
+by default and the local directories, there are also the following three entries
+on the user selection list these are;
+<UL>
+<LI> QUIT: Quit file read operation to return to Flint menus. </LI>
+<LI> CHANGE-DRIVE: Search other hard,network or floppy drives. </LI>
+<LI> WILD-SELECT: Change the default file search pattern (from *.CAS ). </LI>
+</UL>
+
+<HR>
+<A NAME="WC" > </A>
+WRITE-CASE command will save all the current Geometry, Grid, Cell and Boundary
+information into a file. The user will normally be offered a default name which
+can be modified by the user. The default name will always have the .CAS filename
+extension. It is strongly recommended that this extension is used for all saved
+case files.
+
+<HR>
+<A NAME="WG" > </A>
+WRITE-GRID command will save the current Grid and Cell information as a
+Formatted PREBFC file. These files can later be read into all versions higher
+then V4.11 of Fluent. It is also possible to convert these 2D grids into
+3D by using Fluents 3D-from-2D command. Restricted versions of Flint/2D
+have this facility disabled.
+
+<HR>
+<A NAME="RD" > </A>
+READ-DATA command reads all the field information
+which had been stored into a file by means of the 'WRITE-DATA' command
+during a previous Flint session. These data files are written unformatted
+and therefore can not be read or manipulated by any other means except 'Flint'.
+<P>
+By default all data files are stored using the <B>.DAT</B> filename extension,
+so that they can be easily identified. File read menu normally displays
+only the filenames with the .DAT extension as well as any subdirectories
+and also the parent directory as <B>..</B>. This will enable the Flint user
+to change directories and search through them by simply clicking on them.<BR>
+As well as all the files matching the search pattern, which is <I> *.DAT </I>
+by default and the local directories, there are also the following three entries
+on the user selection list these are;
+<UL>
+<LI> QUIT: Quit file read operation to return to Flint menus. </LI>
+<LI> CHANGE-DRIVE: Search other hard,network or floppy drives. </LI>
+<LI> WILD-SELECT: Change the default file search pattern (from *.DAT ). </LI>
+</UL>
+<HR>
+<A NAME="WD" > </A>
+
+WRITE-DATA command will save the current solution information i.e. the complete
+set of field variables for all the grid-locations into an unformatted data file.
+The default filename extension is  .DAT. It is strongly recommended that this
+extension is used for all saved data files.
+
+<HR>
+<A NAME="DOS" > </A>
+DOS-SHELL command starts up a command shell in which DOS commands can be executed.
+This is only useful for the DOS version of FLINT where multi-tasking is not possible.
+User can return back to FLINT by typing EXIT in this command window.
+
+
+<HR>
+<A NAME="QUIT" > </A>
+QUIT command simply terminates a FLINT session. It is important to save
+your geometry, grid and field data information by using the WRITE-CASE and
+WRITE-DATA commands if you have made any modifications and you wish to refer
+to them during future Flint sessions.
+</BODY>
+
+</HTML>

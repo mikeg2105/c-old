@@ -1,0 +1,28 @@
+#make include file for building ising model on iceberg
+# Standard defines:
+MPI_HOME = /usr/local/mpich-gm2_PGI
+MPI_INCLUDE = $(MPI_HOME)/include
+CC = ${MPI_HOME}/bin/mpiCC
+
+LD  	=	${MPI_HOME}/bin/mpiCC
+WRES	=	
+CCOMP	=	gcc
+HOMEV	=	
+VPATH	=	$(HOMEV)/include
+oDir	=	.
+Bin	=	.
+LIBDIRS	=	-L../lib
+#	-L/usr/local/lib
+
+#incDirs	=	-I../IoUtils
+incDirs = 
+
+
+LD_FLAGS = -g
+
+LIBS = -lm 
+#C_FLAGS	=	-g -DCWDEBUG
+C_FLAGS = -O -fast
+
+#MYLIBS = ../lib/libIoUtils.a
+MYLIBS = 

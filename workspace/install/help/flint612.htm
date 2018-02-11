@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<TITLE> SOLUTION PARAMETERS </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> SOLUTION PARAMETERS </H3> </CENTER>
+<P>
+ These features relate to the options which control modify or
+ monitor the CFD calculations as carried out by the <A HREF="flint41.htm">
+ SOLVE </A> command.
+<P>
+
+    These are;
+
+    <UL>
+    <LI> MONITOR-SOLVER: This switch enables the production of diagnostic
+    reports for each of the equations being solved during each iteration.
+    Normally only the sum of the residuals for each variable are printed.
+    However, when this option is enabled the actual cell location of the
+    largest residual value as well as the residual values themselves are
+    reported.</LI>
+    <LI> ALLOW PATCHING OF BOUNDARY VALUES: The EXPERT->PATCH command can
+    be used to initialise or redefine the values of the field variables,
+    such as velocities and temperatures, stored at the computational (live)
+    grid locations. The boundary-cells will normally be protected from
+    the actions of the PATCH command in order to protect the boundary
+    conditions as defined earlier by the SETUP->BOUNDARY-CONDITIONS command. <BR>
+    However, enabeling this option will remove such protection thus allowing
+    the boundary conditions to be changed by means of the PATCH command.</LI>
+    <LI> CONVERGENCE-DIVERGENCE CHECK ON: Iterations as initiated by SOLVE
+    command will continue until a predefined convergence limit is satisfied.
+    Once the convergence criteria is satisfied, Flint will not carry out
+    any more iterations even if it is instructed to do so. <BR>
+    Flint uses the convergence tests for also detecting signs of rapid
+    divergence during the iterations in order to suspend a rapidly diverging
+    process. Enabling this option will disable such checks so that the
+    iterations will be carried out without any  attention to divergence/
+    convergence.
+    </LI>
+    <LI> SET MINIMUM RESIDUAL SUM SUM: The convergence criteria used by Flint
+    is to check the sum of the normalised sum of residuals, as reported
+    during each iteration, against a predefined limit, which is 1.0E-3
+    by default. This option allows the user to redefine the convergence
+    limit used for this criteria.</LI>
+    <LI> NORMALISE RESIDUALS: During SOLVE, normalised values of the residual
+    sums are reported at each iteration step. Disabling this option reports the
+    actual, rather than the normalised values.</LI>
+    <li> CONTINUITY CHECK: There is a built-in mass continuity check, which
+    aborts the iterative solution if any mass-imbalance is detected.That is
+    to say, the total mass entering the domain must equal the mass exiting the
+    domain. If there are any OUTLET cells Flint will usually ensure this
+    mass-balance by using these cells.This option can be used to disable
+    the mass continuity checks.</LI>
+    <LI> ENABLE QUADRATIC UPWIND SCHEME: By default Flint uses a power law
+    to interpolate the values of the field variables between the grid
+    points. An alternative method of interpolating these field variables
+    is the (QUICK) quadratic upwind differencing scheme, which can sometimes
+    produce better results by reducing the artificially induced numerical
+    diffusions.</LI>
+    <LI> RESET OPTION: If this option is enabled than every time the user
+    goes into SETUP menu, it will be assumed that there will be some major
+    changes carried out to the geometry, grid or boundary conditions which
+    will warrant resetting all the field variables to zero so as to ensure
+    that there is no spurious information left over from any previous calculations.
+    </LI>
+    <LI> SET PRESSURE REFERENCE LOCATION: Pressures are usually treated as
+    relative values and a cell is normally selected by Flint to be the
+    reference cell, while carrying out he calculations.
+    It is recommended that a live-cell is used for such purpose.</LI>
+    </UL>
+
+
+
+</BODY>
+
+</HTML>

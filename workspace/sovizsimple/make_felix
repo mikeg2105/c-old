@@ -1,0 +1,13 @@
+#Makefile for glvizsimple model
+CC = gcc
+CPP = g++
+CLINKER = ${CC}
+CPPLINKER = ${CPP}
+CPPFLAGS = -DSOXT_DEBUG=1 -DSOXT_INTERNAL -I/usr/X11R6/include -I/usr/local/include/Inventor/annex -D_REENTRANT
+CFLAGS =  -g -O2 -W -Wall -Wno-unused -Wno-multichar 
+LINKFLAGS = -ggdb -Wall -g3
+VPATH = src:../include
+LDFLAGS = -L/usr/X11R6/lib -L/usr/local/lib
+LIBS = -lSoXt -lXm -lCoin -lGL -lXext -lSM -lICE -lX11 -ldl -lpthread -lm -lXt -lXp -lXi -lXmu -lXpm
+#LIB = -L/usr/X11R6/lib -lGL -lGLw -lGLU  -lXm -lXext -lXt -lX11 -lm
+INCLUDE = -I/usr/include

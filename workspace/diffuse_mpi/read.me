@@ -1,0 +1,104 @@
+ 
+  This directory contains a set of exercises and example programs provided
+  for the students attending the INTRODUCTION TO MPI course given by D.SAVAS.
+  Acknowledgements, where needed, are inserted in the actual program listings.
+  
+  Soon after logging in, you will need to start up an interactive parallel 
+  processing shell by using one of the Qsh commands listed below. That is
+  because you can run parallel processing jobs only within such shells.
+  
+  None of the example programs are time consuming and therefore while 
+  running the  exercises, any indication of non-responce will usually 
+  imply that your program has fallen into a deadlock situation and you 
+  will have to press CTRL + C to terminate it.
+  
+  YOU MUST COPY THE EXERCISES DIRECTORY INTO YOUR AREA.
+  
+                      cp -R /sw/local/courses/intrompi intrompi 
+   and work there; 
+                      cd intrompi 
+  
+  
+                   GENERAL TIPS 
+         
+		   
+      - TO FIND A FILE WITH WILD CARD:  
+  	find . -name 'abc*'
+  
+      - TO START AN INTERACTIVE JOB THAT USES N PROCESSORS: 
+        Easy to use scripts are :   
+           Qsh , Qsh2 Qsh3  or Qsh4  
+        These start 1, 2 3 and 4 processor jobs respectively.
+      
+      - TO COMPILE AN MPI PROGRAm : 
+   Fortran:
+  	mpf90 filename.f90  -lmpi     ( or mpf77 or mpf95 ) 
+   C: 
+        mpcc filename.c -lmpi -lm  ( if math libraries are needed ) 
+   C++ 
+        mpCC filename.cpp -lmpi -lm
+	
+      - TO RUN THE RESULTING EXECUTABLE: 
+           mprun  a.out  ( use all the available processors ) 
+  	   mprun -np <n> <executable>   (use only <n> processors.
+                  e.g. mprun -np 4 a.out
+        Can also use the -x sge parameter instead of the -np 
+     	   e.g. mprun -x sge a.out 
+	   
+---------------------------------------------------------------------	
+    
+                     LIST OF EXAMPLE PROGRAMS 
+		     
+  The list below gives the name of each program, brief explanation
+   and the concepts it introduces. Users are advised to investigate
+   these programs in the order they are listed. There is a c and fortran
+   version of each program. It is sufficient to choose one of these
+   languages you are familiar with.
+  
+   INTRODUCTION PROGRAMS:
+   ex1.f90, ex1.c : First Program that says hello. BASIC CONCEPTS.
+   hello.f90      : Same as above but shows how to take advantage of the
+   			Fortran90 USE statement. BASIC CONCEPTS.
+			
+   PROGRAMS EXPLAINING DEADLOCK SITUATIONS: 
+   deadlock.f90 .c: These programs show how a deadlock situation may arise.
+    		    Modifying this to use unblocking send/receieves listed
+		     given in deadlock2.c and deadlock3.c  (works ). 
+   deadlockok.f90.c:  ... and how to avoid deadlock. Correct Solution. 
+    
+    PROGRAMS USING POINT-TO POINT AND COLLECTIVE COMMUNICATIONS: 
+    diffuse1.f90 .c : Diffusion Problem. POINT TO POINT COMMUNICATIONS.
+    diffuse2.f90 .c : Same as above, O/P TO FILES instead of terminal.
+    diffuse3.f90 .c : Same Problem but also using COLLECTIVE COMMUNICATIONS.
+    pi1.f90 .c      : Calculating pi by a series expansion ( scalar version)
+    pi2.f90 .c      : Same calculations performed in a parallel manner but 
+    		      results not accumulated. BASIC CONCEPTS.
+    pi3.f90 .c      : Calculating pi. Complete parallel solution.REDUCTION OP.		    
+    diffuse4.f90 .c : Further improved by using the REDUCTION operation.
+    diffuse5.f90 .c : Refinements are made by using a VIRTUAL TOPOLOGY.
+    
+    FURTHER EXAMPLES:
+    
+     A few more exercises and example programs selected from various other
+      mpi courses are collated in the following directories:
+        
+	./exercises  : Extra Exercises.
+        ./examples   : Sample MPI programs.
+  
+   
+    REFERENCES:
+
+	 Home of MPI Forum: All standards are available here:
+	http://www.mpi-forum.org/
+	Other MPI home pages:
+	http://www-unix.mcs.anl.gov/mpi/
+
+	An MPI Book on the WEB: 
+	http://www.netlib.org/utk/papers/mpi-book/mpi-book.html
+
+	University of South Florida MPI links:
+	http://rocs.acomp.usf.edu/tut/mpi.php
+
+	MPI Course notes at Edinburgh Computer Centre
+	 http://www.epcc.ed.ac.uk/computing/training/document_archive/mpi-course/
+

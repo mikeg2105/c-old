@@ -1,0 +1,4 @@
+GRAM Job failed because the job manager detected an invalid script response (error code 24)
+globus_gram_client_callback_allow successful
+GRAM Job submission successful
+GLOBUS_GRAM_PROTOCOL_JOB_STATE_FAILED

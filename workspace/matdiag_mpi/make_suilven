@@ -1,0 +1,38 @@
+#make include file for building ising model on iceberg
+# Standard defines:
+CC  	=	g++
+LD  	=	g++
+WRES	=	
+CCOMP	=	gcc
+HOMEV	=	
+VPATH	=	$(HOMEV)/include
+oDir	=	.
+Bin	=	.
+#libDirs	=	-L../lib \
+#	-L/usr/local/lib
+
+#incDirs	=	-I../IoUtils
+incDirs = 
+
+LD_FLAGS =	-g -DCWDEBUG
+LIBS	=	-lcwd
+C_FLAGS	=	-g -DCWDEBUG
+
+MYLIBS = ../lib/libIoUtils.a
+
+SRCS	=\
+	IoUtilsTest.cpp
+
+EXOBJS	=\
+	$(oDir)/IoUtilsTest.o
+
+ALLOBJS	=	$(EXOBJS)
+ALLBIN	=	$(Bin)/IoUtilsTest.exe
+ALLTGT	=	$(Bin)/IoUtilsTest.exe
+
+
+#INCLUDES = ../IoUtils/vec.h ../IoUtils/IoPropertyManager.h
+INCLUDES =
+
+
+

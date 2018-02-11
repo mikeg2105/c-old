@@ -1,0 +1,33 @@
+/usr/local/mpich-gm2_PGI/bin/mpiCC -O -fast   -o cmatmpi.o -c cmatmpi.cpp
+"../utils/vec.h", line 139: warning: qualified name is not allowed in member
+          declaration
+  		int vec::maxindex();
+  		    ^
+
+"cmatmpi.cpp", line 41: warning: variable "jini" was declared but never
+          referenced
+  	int jini;
+  	    ^
+
+"cmatmpi.cpp", line 42: warning: variable "j" was declared but never referenced
+  	int i,j,k,l;
+  	      ^
+
+"cmatmpi.cpp", line 45: warning: variable "p" was declared but never referenced
+  	int p,ac;
+  	    ^
+
+"cmatmpi.cpp", line 50: warning: variable "rmdiag" was declared but never
+          referenced
+  	float rmdiag;
+  	      ^
+
+"cmatmpi.cpp", line 211: warning: variable "kinitial" was set but never used
+          int kinitial,kfinal,ac1;
+              ^
+
+"cmatmpi.cpp", line 211: warning: variable "kfinal" was set but never used
+          int kinitial,kfinal,ac1;
+                       ^
+
+/usr/local/mpich-gm2_PGI/bin/mpiCC -L../lib -lm  -o ./matdiag_mpi matdiag_mpi.o ../utils/vec.o ../utils/mat.o ./cmatmpi.o ./cvecmpi.o 

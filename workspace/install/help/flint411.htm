@@ -1,0 +1,150 @@
+<HTML>
+<HEAD>
+<TITLE> FLINT/2D ACHIEVING A SOLUTION </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+<P>
+
+<CENTER> <H3> FLINT/2D ACHIEVING A SOLUTION </H3> </CENTER>
+<P>
+
+
+The number of iterations required before a solution is achieved will inevitably
+depend on the number of cells in the domain and the number of equations being
+tackled ( i.e. the physical complexity of the model). <BR>
+There are, however, other factors which may contribute to the speed of
+convergence ( or the cause of divergence ).
+It is not uncommon to find combinations of geometries, boundary conditions and
+physical properties which will cause rapid divergence.
+Some problems will also need to be coaxed into a path towards convergence
+by setting the field variables to reasonable initial values, switching off
+some of the physical complexity or reducing the relaxation factors.
+<P>
+Following is a list of techniques to improve convergence;
+<OL>
+<LI> Start with a reasonable set of initial conditions.
+      PATCH-DATA command can be used to set the values of field variables
+      for a selected group of cells. In the absence of an initial guess,
+      Flint sets all the variables  to zero for all the live cells.
+      Note that the temperature is set to 0C  ( i.e. 273K ).
+      Patching is recommended for the fluid temperature for problems involving
+      heat transfer. If a large number of computational cells are used it
+      will be an advantage to start with reasonably guessed velocity fields.</LI>
+<LI> Solve partial problem initially and add physical complexities one at a time
+     later.<BR>
+     In problems involving complex physical models and large amounts of
+     equations, it will be a great advantage to solve the problem a step at a
+     time, eventually introducing the complete physical model.
+     For example, in flows involving heat and fluid transfer, it will
+     be useful to start off with an isothermal flow by patching the velocity
+     field to initial guess values but not solving for enthalpy. After a
+     reasonable flow field is established (for example - residuals have gone
+     down to around 1.0E-2 ) you can start solving for heat transfer.
+     The ability to select and re-select which equations to solve is
+     achieved very easily by means of  EXPERT   ->   SELECT-VARIABLES menu.
+
+      Switching off the equations involving a particular variable freezes
+      the value of that variable and its current distribution until it is
+      switched back on again. These techniques are particularly useful when
+      studying reacting flows, where species concentrations and temperatures
+      can be established before chemical reaction equations are enabled.
+      It is important to note that  you must finally be able to achieve
+      convergence with all the equations switched on.
+      It is also important to note that if the properties of your fluid vary
+      with temperature it will not be advisable to switch the enthalpy equation
+      off permanently.</LI>
+<LI>  If possible start from a previous solution. This is a similar message to
+      the one given in (2) above but it refers to changes in the  physical
+      geometry. However there are strict conditions attached to its being
+      usable. If you have already found a converged solution for a problem
+      and you like to solve a similar problem on a slightly different geometry
+      then you can:
+      (a) modify the case file to change your geometry and save
+          it as a new case file
+      (b) read the data file containing the solution for the original
+          geometry to speed up convergence.
+          For example, when you are trying to find the best position of
+          internal baffles this method will save a lot of time. It is only
+          usable if the number of cells in all the directions ( and hence
+          the total number of cells) remain unaltered from one geometry to
+          the next.
+       </LI>
+<LI>      Reduce Underrelaxation Factors. During each iteration, having calculated a new value for a particular variable, Fluent replaces it with a corrected value by using the formula;
+	      ALPHAnew  =   ALPHAold +  (ALPHAnew-ALPHAold)<br>
+
+          where; ALPHA is known as the under-relaxation factor which will normally
+          vary between 0.0 and 1.0.  ALPHA= 0.0 implies no change ( which is
+          pointless !). ALPHA=1.0 implies we use the new values without taking
+          the old values into consideration.<BR>
+          When you start Fluent calculations ( i.e. SOLVE ) during the
+          initial few iterations you are likely to notice oscillations in the
+          reported normalised residuals. This is because during the initial
+          stages, there are likely to be rapid changes in the values of the
+          variables from one iteration to the next. However, such oscillations
+          should start to die down as the calculations proceed. It is sometimes
+          possible for the oscillations not to settle but to actually cause
+          divergence. This will be reported by the message  RAPID DIVERGENCE
+          DETECTED and the calculations will abort.<br>
+          There may be a number of causes for divergence, including ill- formed
+          boundary conditions, physical constants etc., distorted grids, large
+          body-forces, steep variations in the fluid properties and so on.<BR>
+          It is also possible that a solution may exist for a difficult
+          physical model, as long as can we get past the initial stages of
+          iterations on the way towards a solution. This can be achieved by
+          reducing the underrelaxation constants to start with, waiting for
+          the residuals to settle and increase these constants back to
+          improve convergence. Menu EXPERT - UNDERRELAX-1 will allow the user
+          to redefine these constants for each variable.
+          </LI>
+
+<LI>  Change direction of the sweeps of solver if necessary.
+Flint uses iterative methods to obtain an approximate solution to the
+discretised equations. This technique is referred to as the Line-Gauss-Seidel
+method, which involves simultaneously solving the linearised equations for a
+group of cells at a time rather than for the whole domain. As these equations
+are themselves only approximate linearisations of the actual governing equations,
+it will be unnecessary and inefficient to attempt a complete solution.<BR>
+Grouping is done for numerical convenience so that a line of cells
+( of fixed I direction , or fixed J direction ) falls into the same group.
+Default being fixed I direction. In Flint terminology Fixed I direction
+implies Sweep Direction=2 and fixed J direction implies Sweep Direction=1 .<BR>
+It is advisable to  select a sweep direction as perpendicular to the
+predominant fluid flow as possible. So, if the expected flow is predominantly
+in X direction select Sweep Direction=1.
+<BR> This option can be controled by means of the
+<B> EXPERT   -> SWEEPS-OF-SOLVER </B> menu. <BR>
+
+Considerations about the sweeps of solver are needed only if the
+convergence is very slow.
+<BR>Flint also includes options to solve
+the pressure equations bu what is known as
+MULTI-BLOCK techniques to avoid problems of slow convergence due to the
+slow propagation of variables across the whole geometry, particularly with
+problems containing large numbers of cells. In multi-block mode, solution
+involves super-cells, which are simply much larger cells made up of
+the original cells. <B> EXPERT -> PRESSURE-SOLVER </B> command controls
+the use of Multi-Grid Pressure-Solver and its parameters.
+
+<LI>  Monitor Solver to find out the trouble spots.
+</OL>
+The usual residual reports which are displayed after each iteration give
+an adequate indication of how the solution is progressing generally.
+However, in cases when the convergence is becoming harder to achieve,
+it is possible to get an indication of the trouble spots by enabling
+the MONITOR-SOLVER option in the EXPERT  -  SOLUTION-PARAMETERS  table.
+This will give a single line report on where the largest residual was
+found during which equation. When using MULTI-BLOCK methods of solution
+there will be extra monitor information displayed to indicate the progress
+of the solution during each refinement. In the MULTI-GRID-SOLVER-PARAMETERS
+menu MONITOR-MG-SOLVER option can be used to control this monitoring information.
+
+
+
+
+
+</BODY>
+
+</HTML>

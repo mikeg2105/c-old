@@ -1,0 +1,23 @@
+/usr/local/mpich-gm2_PGI/bin/mpiCC    -c -o diffuse5.o diffuse5.c
+"diffuse5.c", line 125: warning: nested comment is not allowed
+  ! 1 , 2  , 3 , .....             n                       /*
+                                                           ^
+
+"diffuse5.c", line 129: warning: nested comment is not allowed
+  /* initialise distribution during the first time step.  */
+  ^
+
+"diffuse5.c", line 28: warning: variable "ierr" was declared but never
+          referenced
+  	int irank , ileft , iright , nsize , ierr , i , ai , ii;
+  	                                     ^
+
+"diffuse5.c", line 28: warning: variable "i" was declared but never referenced
+  	int irank , ileft , iright , nsize , ierr , i , ai , ii;
+  	                                            ^
+
+"diffuse5.c", line 28: warning: variable "ai" was declared but never referenced
+  	int irank , ileft , iright , nsize , ierr , i , ai , ii;
+  	                                                ^
+
+/usr/local/mpich-gm2_PGI/bin/mpiCC -o diffuse_mpi diffuse5.o -lm -O -fast -g

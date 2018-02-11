@@ -1,0 +1,9 @@
+&
+(executable=../allreduce)
+(directory=/home1/cs/cs1mkg/proj/cppdev/workspace/allreduce_mpi/jobs)
+(maxCpuTime=600)
+(jobType=mpi)
+(count=4)
+(stdout=exp1_ice.out)
+(stderr=exp1_ice.err)
+

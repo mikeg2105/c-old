@@ -1,0 +1,32 @@
+#make include file for building ising model on iceberg
+# Standard defines:
+CC  	=	g77
+LD  	=	g77
+WRES	=	windres
+CCOMP	=	gcc
+HOMEV	=	
+VPATH	=	$(HOMEV)/include
+oDir	=	.
+Bin	=	.
+libDirs	=	
+
+incDirs	=	 
+
+LD_FLAGS =	-g -s
+LIBS	=	
+C_FLAGS	=	-g -O
+
+MYLIBS = 
+
+SRCS	=\
+	sum1.f
+
+EXOBJS	=\
+	$(oDir)/sum1.o
+
+ALLOBJS	=	$(EXOBJS)
+ALLBIN	=	$(Bin)/sum1
+ALLTGT	=	$(Bin)/sum1
+
+
+INCLUDES = 

@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<TITLE> LINK SETTINGS </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> LINK SETTINGS </H3> </CENTER>
+<P>
+  The finite difference equations applied to a particular cell
+  takes into account the influence of all its neighbouring cells
+  as determined by the discretisation formulea.
+  Therefore each finite difference equation will have terms contributed
+  to it by each of its neighbouring cells.
+  <P>
+  In the case of wall/live-cell interface regions, the effects of the wall
+  on the flow are modelled by using the wall function formulation
+  (Spalding,1972 V303pp4-23), which introduces such effects as source terms
+  by employing the log-law of the wall to compute the wall shear stress.
+  By analogy between the heat and mass transfer equations the log-law of the wall
+  is also extended to the wall heat-flux formulations.
+  <BR> When link-cutting is applied to wall-boundaries this in effect makes
+  the walls frictionless 'in the case of mass-transfer equations' and
+  adiabatic 'in the case of heat-transfer equations'.
+
+  <BR>
+  Therefore the concept of link-cutting refers to the procedure whereby the
+  discretisation equation for a particular live cell have no
+  contributions made to it from any of the neighbouring boundary cells.
+  This in effect isolates the cell from the adjacent boundary cells,
+  allowing no flow of information from these cells. This is also
+  regarded as a zero-gradient type boundary.<P>
+  A good example of use of the link-cutting facility is for the
+  modelling of free surface flows, as in the case of the surface of a
+  vessel of fluid.
+  <BR>
+
+
+</BODY>
+
+</HTML>

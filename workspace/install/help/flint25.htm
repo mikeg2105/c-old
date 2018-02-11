@@ -1,0 +1,130 @@
+<HTML>
+<HEAD>
+<TITLE> REFINE GEOMETRY  </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> REFINE-GEOMETRY  </H3> </CENTER>
+<P>
+
+ This is the second stage of the geometry definition, achieved by means of a
+  <A HREF="flint124.htm"> graphical interface</A>.
+
+<BR>
+  Having already defined regions in  <A HREF="flint24.htm" > DEFINE-GEOMETRY </A>,
+ the user is given the freedom to manipulate the actual shapes of these regions
+ and their edges. If during this stage it becomes appearent that more regions
+ are needed or some of the existing regions needs to be deleted, it is always
+ possible to drop back into DEFINE-GEOMETRY
+ without affecting the current features.
+ <BR>
+ The following three icons are introduced to assist with refine geometry;
+  <UL>
+  <LI>  <A HREF="#MOVE">  MOVE-POINT</A> </LI>
+  <LI>  <A HREF="#EDGET"> EDGE-TYPE </A> </LI>
+  <LI>  <A HREF="#GUIDEC"> GUIDE-CURVES</A> </LI>
+ </UL>
+
+ When the geometry is displayed all corner-points of the regions are marked
+ with green rectangles. In addition every edge have a single red
+ cross (X) associated with it. These red crosses are used in controlling
+ the shapes of the edges and hence refered to as
+ <A HREF="flgdefi.htm#EDGECNTL" >   Edge-Control-Points </A>.
+
+
+ <A NAME="MOVE" > </A>
+ <HR>
+ <CENTER> <B> MOVE-POINT </B> </CENTER> <br>
+ Whilst in MOVE-POINT mode ,<I> which is the default mode, </I> user is given
+ the freedom to latch onto and move any one of these green-rectangle or
+ red-cross points.
+ For example, to move an edge-control-point, click the mouse button
+ on or near that point.  This operation will
+ latch that control-point onto the mouse. Move the control-point to where
+ you would like it to be by moving the mouse and click the mouse button again.
+  Note that
+ LEFT-BUTTON click will always position the control-point immediately where
+ it appears to be where as RIGHT-BUTTON will ask the position to be confirmed,
+ in terms of its (X,Y) coordinates thus allowing for exact positioning.  <BR>
+ When a control-point is being moved, new shape of the edges which are
+ effected by that control point are constantly displayed,
+  giving user an acurate view of the effects of his
+ actions before they are confirmed and made permenant by clicking the mouse.
+ Also, at this stage, the move operation can be cancelled to revert the
+ control point to its previous location by pressing the ESC key or by
+ pressing the mouse button outside the main graphics area.
+
+
+ <A NAME="EDGET" > </A>
+ <HR>
+ <CENTER><B> EDGE-TYPE </B></CENTER> <br>
+
+ Experimentation with moving the corner points or
+  the edge-control-point of a new edge will quickly
+ reveal that the edges look like spline-curves. In fact the default edge type
+ is a 3-point spline going through the two corner points+the one edge control
+ point. Each end-point gradient being set to the gradient of a line joining the
+ adjacent control points. This is only one of
+ <A HREF="flgdefi.htm#EDGETYPE" >  five different types of edges </A>
+ that can be used.
+  The type of an edge can be changed very easily by means of the
+  EDGE-TYPE icon, by clicking on this icon and selecting
+ a new edge type from the pop-up menu.
+ Once an edge-type is selected, it becomes the current-edge-type and
+ moving any edge by its edge-control-point ( red X ) automatically
+ makes that edge assume the current-edge-type. The current-edge-type
+ is always displayed on the EDGE-TYPE icon in red text.
+
+ <A NAME="GUIDEC" > </A>
+ <HR>
+
+ <center> <B> GUIDE-CURVES </B> </center>
+
+   The concept of guide curves give Flint the ability to generate finely
+ detailed edges and shapes. The guide curves are free standing geometrical
+ curves which can be generated independently of other Flint structures.
+ However, what makes them special is the fact that having generated a guide
+ curve, an edge can later be made to follow it  ( or part of it )
+ precisely, hence the name.
+
+  Currently there are three types of guide-curves; CIRCLES , PARABOLAS
+  and SPLINES.<BR>
+   Splines can be formed by using from 4-points upto 19-points. This gives
+  enough flexibility to generate any arbitrary shape.<br>
+   Once formed, a guide curve can be moved and/or re-shaped by moving
+    its individual control points. However, see below for restrictions.
+
+ <P>
+
+ <center> <B> LOCKING ONTO GUIDE-CURVES </B> </center>
+
+  If not for the ability of being able to lock edges onto
+  the guide curves, they would have no real purpose.
+  To lock an edge onto a guide curve, first move the two corner-points of the
+  edge onto the guide curve and finally move the the edge control point (X)
+  onto the guide curve. Success of the locking operation is signalled
+  by making the edge follow the guide curve precisely and also a musical
+  note. The locking of an edge is achieved by checking the proximity of all
+  three points of an edge to the guide-curve, it is therefore important
+  to make sure that all three points are on or very near the guide-curve.
+   <BR>
+  Once <B> locked </B> onto a guide curve, an edge can be <B> unlocked </B>
+  by moving its control point away from the guide-curve. This is signalled
+  by a (reverse) musical tone.
+  <BR>
+  <B> IMPORTANT NOTE: </B> Once an edge gets locked onto a guide curve,
+  the guide curve becomes fixed and impossible to move. So if you wish to
+  move or re-shape a guide curve, you must first unlock any edges which
+  are locked onto it. Also note that, there is no limit to how many
+  edges can be locked onto a single guide-curve.
+
+
+
+
+
+</BODY>
+
+</HTML>

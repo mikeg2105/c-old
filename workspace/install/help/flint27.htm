@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<TITLE> REFINE GRID  </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#ffffff">
+
+
+
+<CENTER> <H3> REFINE-GRID  </H3> </CENTER>
+<P>
+
+ Having defined the grid distribution along all the edges by means of the
+ <A HREF="flint26.htm" > Define-Grid command </A>, any of the
+ <A HREF="flgdefi.htm#GRDCNTL" >   Grid-Control-Points </A> position
+ can be changed individually by this command.
+ <P>
+ While in Refine-Grid view, user can select any grid-control-point by clicking
+ the mouse on or near one. The selected point latches onto the mouse
+ and hence can be re-positioned by moving the mouse and clicking it once more
+ to re-position it. As usual, the right-hand-button can be used for precise
+ positioning via dialog boxes.
+ <P>
+ If a wrong grid-control-point is selected by accident, the situation can be
+ retrieved by pressing the ESC button or clicking the mouse outside the
+ main display area.
+ <P>
+ It is also important to note that the grid-control-points form an ordered
+ set of points from which the internal grids are generated later.
+  In order to ensure  the validity of the internal  gridding, ordering of
+  these grid control points  must never be changed. I.e. Do not re-position
+  a grid-contol-point anywhere except somewhere between its neighbours.
+  Such attempts will usually be signalled and not allowed by Flint's
+  internal checks.
+
+<P>
+
+  Only one new icon named <B> INSERT CPOINT </B> is introduced to assist with
+  Grid-Refinement. This icon allows the user to add an extra
+  Grid-Control-Point where it is needed. This is equivalent to inserting
+  an extra line of cells in a Fluent geometry.
+  <P>
+  Clicking on this icon changes the function of the mouse for the next task
+  only. Flint sounds a bleep and also prompts the user to click the mouse
+  where s/he intends to insert a grid-control-point. When the user clicks
+  the mouse in between two grid-control-points Flint inserts the new control
+  point at that position and returns to the usual state of allowing the user
+  to select and move grid-control-points.<BR>
+  While trying to insert a control-point if the user does not click between
+  two grid-control points then the operations is cancelled and everything
+  is returned to normal state. <BR>
+  It is important to note that, inserting an extra grid-control-point on one
+  edge will automatically insert one extra control point at the corresponding
+  position of all the edges which are logically accross from it. This ensures
+  the grid-validity.
+
+
+
+</BODY>
+
+</HTML>
